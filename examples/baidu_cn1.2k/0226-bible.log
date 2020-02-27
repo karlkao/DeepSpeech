@@ -1,0 +1,39 @@
+Target Transcription: 出埃及記第１章
+Output Transcription: 在川西第１章
+Current error rate [cer] = 0.571429
+
+Target Transcription: 以色列的众子各带家眷和雅各一同来到埃及
+Output Transcription: 以色列的子各带家眷和雅歌１同来到爱情的
+Current error rate [cer] = 0.315789
+
+Target Transcription: 他们的名字记在下面有流便西缅利未犹大以萨迦西布伦便雅悯但拿弗他利迦得亚设
+Output Transcription: 他们的名字记在下面有刘边西面立为犹大以大家岂不雅但答复他的加雅
+Current error rate [cer] = 0.527778
+
+Target Transcription: 凡从雅各而生的共有七十人约瑟已经在埃及
+Output Transcription: 凡从雅各儿生的共有十人约瑟已经在
+Current error rate [cer] = 0.210526
+
+Target Transcription: 约瑟和他的弟兄并那一代的人都死了
+Output Transcription: 于是约瑟和他的弟兄的人都死了
+Current error rate [cer] = 0.375000
+
+Target Transcription: 以色列人生养众多并且繁茂极其强盛满了那地
+Output Transcription: 以此令人生养众多并且繁茂极其强盛满了那
+Current error rate [cer] = 0.150000
+
+Target Transcription: 有不认识约瑟的新王起来治理埃及
+Output Transcription: 有不认识女子的亲王起来之
+Current error rate [cer] = 0.466667
+
+Target Transcription: 对他的百姓说看哪这以色列民比我们还多又比我们强盛
+Output Transcription: 对于他的百姓说看哪这以色列民比我们还多又比我们强盛的
+Current error rate [cer] = 0.083333
+
+Target Transcription: 来罢我们不如用巧计待他们
+Output Transcription: 来吧我们不如用巧计在他们
+Current error rate [cer] = 0.166667
+
+Target Transcription: 恐怕他们多起来日後若遇甚麽争战的事就连合我们的仇敌攻击我们离开这地去了
+Output Transcription: 恐怕他们躲起来日后若遇什么争战的事就联合我们的仇敌攻击我们离开这里去了
+Current error rate [cer] = 0.171429

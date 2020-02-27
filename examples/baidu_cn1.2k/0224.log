@@ -1,0 +1,104 @@
+-----------  Configuration Arguments -----------
+alpha: 2.6
+beam_size: 300
+beta: 5.0
+cutoff_prob: 0.99
+cutoff_top_n: 40
+decoding_method: ctc_beam_search
+error_rate_type: cer
+infer_manifest: dataset/Wang/8k/manifest.dev
+lang_model_path: models/lm/zhidao_giga.klm
+mean_std_path: models/baidu_cn1.2k/mean_std.npz
+model_path: models/baidu_cn1.2k
+num_conv_layers: 2
+num_proc_bsearch: 8
+num_rnn_layers: 3
+num_samples: 20
+rnn_layer_size: 2048
+share_rnn_weights: 0
+specgram_type: linear
+use_gpu: 1
+use_gru: 1
+vocab_path: models/baidu_cn1.2k/vocab.txt
+------------------------------------------------
+finish initing model from pretrained params from models/baidu_cn1.2k
+
+Target Transcription: 各位亲爱的弟兄姐妹大家好从今天呃这一讲开始我们会连着
+Output Transcription: 不过作为天的弟兄就没大家好从今天这样开始了我们会连成的
+Current error rate [cer] = 0.500000
+
+Target Transcription: 呃有四十讲来讲出埃及记
+Output Transcription: 我有时想来讲的话
+Current error rate [cer] = 0.727273
+
+Target Transcription: 出埃及记是整本我们的圣经的第二卷
+Output Transcription: 这就是成本我们的盛京的第２卷
+Current error rate [cer] = 0.500000
+
+Target Transcription: 是非常重要的一卷
+Output Transcription: 是非常重要的意见
+Current error rate [cer] = 0.250000
+
+Target Transcription: 当我们讲到呃头一卷也就是第一卷创世纪的时候我们曾经啊讲过他的主题思想
+Output Transcription: 但是当我们讲到头１圈也就是第１卷创世纪的时候我们曾经见过他的主题４项目
+Current error rate [cer] = 0.323529
+
+Target Transcription: 我们说在创世纪当中呢是
+Output Transcription: 我我们我们是我们在超市集团中的
+Current error rate [cer] = 1.090909
+
+Target Transcription: 讲到神伟大的主权
+Output Transcription: 将是伟大的主持人
+Current error rate [cer] = 0.625000
+
+Target Transcription: 还有呢就是讲明了宇宙外有
+Output Transcription: 还有呢就是讲明了宇宙万有的
+Current error rate [cer] = 0.166667
+
+Target Transcription: 天地人类社会各个方面的一些事物的来历
+Output Transcription: 天地人类社会各个方面的１些事物的来历
+Current error rate [cer] = 0.055556
+
+Target Transcription: 那么呢从
+Output Transcription: 这就是为什么那么重
+Current error rate [cer] = 2.000000
+
+Target Transcription: 来历到神的主权
+Output Transcription: 来历到神的主权在
+Current error rate [cer] = 0.142857
+
+Target Transcription: 从这两个角度当你在读创世纪的时候
+Output Transcription: 但是从这两个角度当你在独创时期的时候
+Current error rate [cer] = 0.312500
+
+Target Transcription: 我们说你就可以啊
+Output Transcription: 那时我们没说话你就可以
+Current error rate [cer] = 0.625000
+
+Target Transcription: 哦得到非常美好的开启
+Output Transcription: 他找到了非常美好的开启了
+Current error rate [cer] = 0.400000
+
+Target Transcription: 就可以屡出一条真理的线络
+Output Transcription: 这样就可以捋出１条真理的陷落了
+Current error rate [cer] = 0.583333
+
+Target Transcription: 呃读的时候呢就比较清晰
+Output Transcription: 我读的时候就比较清晰的
+Current error rate [cer] = 0.272727
+
+Target Transcription: 那当我们在读出埃及记的时候
+Output Transcription: 但是当我们在独处的时候了
+Current error rate [cer] = 0.615385
+
+Target Transcription: 我们也会按照像读创世纪一样
+Output Transcription: 但是我们也会按照消毒创世纪样的
+Current error rate [cer] = 0.461538
+
+Target Transcription: 我们将会对每一章
+Output Transcription: 这就是我们我们将会对每
+Current error rate [cer] = 0.875000
+
+Target Transcription: 啊它的分段还有他的一些重要情节
+Output Transcription: 那他的身段还有他的１些重要情节的
+Current error rate [cer] = 0.333333
