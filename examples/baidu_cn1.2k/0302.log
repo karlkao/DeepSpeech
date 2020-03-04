@@ -1,0 +1,24 @@
+-----------  Configuration Arguments -----------
+alpha: 2.6
+beam_size: 300
+beta: 5.0
+cutoff_prob: 0.99
+cutoff_top_n: 40
+decoding_method: ctc_beam_search
+error_rate_type: cer
+infer_manifest: data/Wang/8k/manifest.dev
+lang_model_path: models/lm/zhidao_giga.klm
+mean_std_path: models/baidu_cn1.2k/mean_std.npz
+model_path: models/baidu_cn1.2k
+num_conv_layers: 2
+num_proc_bsearch: 8
+num_rnn_layers: 3
+num_samples: 226
+rnn_layer_size: 2048
+share_rnn_weights: 0
+specgram_type: linear
+use_gpu: 1
+use_gru: 1
+vocab_path: models/baidu_cn1.2k/vocab.txt
+------------------------------------------------
+Failed in inference!

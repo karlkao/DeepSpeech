@@ -5,7 +5,7 @@ cd ../.. > /dev/null
 # infer
 CUDA_VISIBLE_DEVICES=0 \
 python -u infer.py \
---num_samples=20 \
+--num_samples=226 \
 --beam_size=300 \
 --num_proc_bsearch=8 \
 --num_conv_layers=2 \
