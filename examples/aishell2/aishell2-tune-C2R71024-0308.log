@@ -1,0 +1,450 @@
+sh run_tune.sh
+run_tune.sh        run_tune.sh.SAVED  
+[1;33mλ [1;37mdgx-18-04 [1;32m/DeepSpeech/examples/aishell2[1;33m[0m sh run_tune.sh
+grep: warning: GREP_OPTIONS is deprecated; please use an alias or script
+-----------  Configuration Arguments -----------
+alpha_from: 0.0
+alpha_to: 10.0
+batch_size: 256
+beam_size: 500
+beta_from: 0.0
+beta_to: 10.0
+cutoff_prob: 1.0
+cutoff_top_n: 40
+error_rate_type: cer
+lang_model_path: models/lm/zhidao_giga.klm
+mean_std_path: data/aishell2/mean_std.npz
+model_path: checkpoints/aishell2-C2R71024/step_final
+num_alphas: 20
+num_batches: -1
+num_betas: 20
+num_conv_layers: 2
+num_proc_bsearch: 12
+num_rnn_layers: 7
+rnn_layer_size: 1024
+share_rnn_weights: 0
+specgram_type: linear
+trainer_count: 8
+tune_manifest: data/Wang/16k/manifest.dev
+use_gpu: 1
+use_gru: 1
+vocab_path: data/aishell2/vocab.txt
+------------------------------------------------
+2020-03-09 02:19:45,999-INFO: begin to initialize the external scorer for decoding
+2020-03-09 02:19:48,161-INFO: language model: is_character_based = 1, max_order = 5, dict_size = 0
+2020-03-09 02:19:48,162-INFO: end initializing scorer
+2020-03-09 02:19:48,162-INFO: start tuning ...
+W0309 02:19:58.123144   252 device_context.cc:236] Please NOTE: device: 0, CUDA Capability: 70, Driver API Version: 10.2, Runtime API Version: 10.0
+W0309 02:19:58.126399   252 device_context.cc:244] device: 0, cuDNN Version: 7.5.
+W0309 02:19:58.126413   252 device_context.cc:270] WARNING: device: 0. The installed Paddle is compiled with CUDNN 7.6, but CUDNN version in your machine is 7.5, which may cause serious incompatible bug. Please recompile or reinstall Paddle with compatible CUDNN version.
+finish initing model from pretrained params from checkpoints/aishell2-C2R71024/step_final
+........................................................................................................................................................................................................
+Batch 0 [226/?], current opt (alpha, beta) = (2.105, 3.684),  min [cer] = 0.285954
+
+Final cer:
+
+(alpha, beta) = (0.000, 0.000), [cer] = 0.358280
+(alpha, beta) = (0.000, 0.526), [cer] = 0.360514
+(alpha, beta) = (0.000, 1.053), [cer] = 0.363586
+(alpha, beta) = (0.000, 1.579), [cer] = 0.367495
+(alpha, beta) = (0.000, 2.105), [cer] = 0.373080
+(alpha, beta) = (0.000, 2.632), [cer] = 0.383692
+(alpha, beta) = (0.000, 3.158), [cer] = 0.397934
+(alpha, beta) = (0.000, 3.684), [cer] = 0.414130
+(alpha, beta) = (0.000, 4.211), [cer] = 0.433119
+(alpha, beta) = (0.000, 4.737), [cer] = 0.465792
+(alpha, beta) = (0.000, 5.263), [cer] = 0.504887
+(alpha, beta) = (0.000, 5.789), [cer] = 0.549288
+(alpha, beta) = (0.000, 6.316), [cer] = 0.615750
+(alpha, beta) = (0.000, 6.842), [cer] = 0.704552
+(alpha, beta) = (0.000, 7.368), [cer] = 0.815415
+(alpha, beta) = (0.000, 7.895), [cer] = 0.962580
+(alpha, beta) = (0.000, 8.421), [cer] = 1.151913
+(alpha, beta) = (0.000, 8.947), [cer] = 1.394862
+(alpha, beta) = (0.000, 9.474), [cer] = 1.671600
+(alpha, beta) = (0.000, 10.000), [cer] = 1.981569
+(alpha,, [cer] = 0.304943
+(alpha, beta) = (1.053, 0.526), [cer] = 0.301871
+(alpha, beta) = (1.053, 1.053), [cer] = 0.298520
+(alpha, beta) = (1.053, 1.579), [cer] = 0.297403
+(alpha, beta) = (1.053, 2.105), [cer] = 0.297124
+(alpha, beta) = (1.053, 2.632), [cer] = 0.295448
+32), [cer] = 0.327283
+(alpha, beta) = (0.526, 3.158), [cer] = 0.333985
+(alpha, beta) = (0.526, 3.684), [cer] = 0.339849
+(alpha, beta) = (0.526, 4.211), [cer] = 0.351299
+(alpha, beta) = (0.526, 4.737), [cer] = 0.366378
+(alpha, beta) = (0.526, 5.263), [cer] = 0.382295
+(alpha, beta) = (0.526, 5.789), [cer] = 0.404915
+(alpha, beta) = (0.526, 6.316), [cer] = 0.425859
+(alpha, beta) = (0.526, 6.842), [cer] = 0.473611
+(alpha, beta) = (0.526, 7.368), [cer] = 0.526110
+(alpha, beta) = (0.526, 7.895), [cer] = 0.593130
+(alpha, beta) = (0.526, 8.421), [cer] = 0.685842
+(alpha, beta) = (0.526, 8.947), [cer] = 0.799777
+(alpha, beta) = (0.526, 9.474), [cer] = 0.954482
+(alpha, beta) = (0.526, 10.000), [cer] = 1.155543
+(alpha, beta) = (1.053, 0.000), [cer] = 0.304943
+(alpha, beta) = (1.053, 0.526), [cer] = 0.301871
+(alpha, beta) = (1.053, 1.053), [cer] = 0.298520
+(alpha, beta) = (1.053, 1.579), [cer] = 0.297403
+(alpha, beta) = (1.053, 2.105), [cer] = 0.297124
+(alpha, beta) = (1.053, 2.632), [cer] = 0.295448
+(alpha, beta) = (1.053, 3.158), [cer] = 0.296007
+(alpha, beta) = (1.053, 3.684), [cer] = 0.298799
+(alpha, beta) = (1.053, 4.211), [cer] = 0.304943
+(alpha, beta) = (1.053, 4.737), [cer] = 0.313320
+(alpha, beta) = (1.053, 5.263), [cer] = 0.326445
+(alpha, beta) = (1.053, 5.789), [cer] = 0.342921
+(alpha, beta) = (1.053, 6.316), [cer] = 0.359955
+(alpha, beta) = (1.053, 6.842), [cer] = 0.383971
+(alpha, beta) = (1.053, 7.368), [cer] = 0.417202
+(alpha, beta) = (1.053, 7.895), [cer] = 0.457414
+(alpha, beta) = (1.053, 8.421), [cer] = 0.508796
+(alpha, beta) = (1.053, 8.947), [cer] = 0.574700
+(alpha, beta) = (1.053, 9.474), [cer] = 0.663223
+(alpha, beta) = (1.053, 10.000), [cer] = 0.766546
+(alpha, beta) = (1.579, 0.000), [cer] = 0.313600
+(alpha, beta) = (1.579, 0.526), [cer] = 0.303267
+(alpha, beta) = (1.579, 1.053), [cer] = 0.295727
+(alpha, beta) = (1.579, 1.579), [cer] = 0.290980
+(alpha, beta) = (1.579, 2.105), [cer] = 0.289584
+(alpha, beta) = (1.579, 2.632), [cer] = 0.288467
+(alpha, beta) = (1.579, 3.158), [cer] = 0.286233
+(alpha, beta) = (1.579, 3.684), [cer] = 0.287071
+(alpha, beta) = (1.579, 4.211), [cer] = 0.289584
+(alpha, beta) = (1.579, 4.737), [cer] = 0.292097
+(alpha, beta) = (1.579, 5.263), [cer] = 0.300475
+(alpha, beta) = (1.579, 5.789), [cer] = 0.310528
+(alpha, beta) = (1.579, 6.316), [cer] = 0.327562
+(alpha, beta) = (1.579, 6.842), [cer] = 0.344876
+(alpha, beta) = (1.579, 7.368), [cer] = 0.370567
+(alpha, beta) = (1.579, 7.895), [cer] = 0.402960
+(alpha, beta) = (1.579, 8.421), [cer] = 0.439821
+(alpha, beta) = (1.579, 8.947), [cer] = 0.483385
+(alpha, beta) = (1.579, 9.474), [cer] = 0.537001
+(alpha, beta) = (1.579, 10.000), [cer] = 0.607093
+(alpha, beta) = (2.105, 0.000), [cer] = 0.341245
+(alpha, beta) = (2.105, 0.526), [cer] = 0.326166
+(alpha, beta) = (2.105, 1.053), [cer] = 0.311645
+(alpha, beta) = (2.105, 1.579), [cer] = 0.304943
+(alpha, beta) = (2.105, 2.105), [cer] = 0.299637
+(alpha, beta) = (2.105, 2.632), [cer] = 0.293493
+(alpha, beta) = (2.105, 3.158), [cer] = 0.289305
+(alpha, beta) = (2.105, 3.684), [cer] = 0.285954
+(alpha, beta) = (2.105, 4.211), [cer] = 0.287071
+(alpha, beta) = (2.105, 4.737), [cer] = 0.288467
+(alpha, beta) = (2.105, 5.263), [cer] = 0.291539
+(alpha, beta) = (2.105, 5.789), [cer] = 0.298520
+(alpha, beta) = (2.105, 6.316), [cer] = 0.309969
+(alpha, beta) = (2.105, 6.842), [cer] = 0.329238
+(alpha, beta) = (2.105, 7.368), [cer] = 0.349902
+(alpha, beta) = (2.105, 7.895), [cer] = 0.369729
+(alpha, beta) = (2.105, 8.421), [cer] = 0.398492
+(alpha, beta) = (2.105, 8.947), [cer] = 0.437587
+(alpha, beta) = (2.105, 9.474), [cer] = 0.485060
+(alpha, beta) = (2.105, 10.000), [cer] = 0.542865
+(alpha, beta) = (2.632, 0.000), [cer] = 0.375314
+(alpha, beta) = (2.632, 0.526), [cer] = 0.361631
+(alpha, beta) = (2.632, 1.053), [cer] = 0.344317
+(alpha, beta) = (2.632, 1.579), [cer] = 0.328400
+(alpha, beta) = (2.632, 2.105), [cer] = 0.316671
+(alpha, beta) = (2.632, 2.632), [cer] = 0.307456
+(alpha, beta) = (2.632, 3.158), [cer] = 0.303267
+(alpha, beta) = (2.632, 3.684), [cer] = 0.300754
+(alpha, beta) = (2.632, 4.211), [cer] = 0.298241
+(alpha, beta) = (2.632, 4.737), [cer] = 0.295169
+(alpha, beta) = (2.632, 5.263), [cer] = 0.297403
+(alpha, beta) = (2.632, 5.789), [cer] = 0.302709
+(alpha, beta) = (2.632, 6.316), [cer] = 0.308294
+(alpha, beta) = (2.632, 6.842), [cer] = 0.321139
+(alpha, beta) = (2.632, 7.368), [cer] = 0.336498
+(alpha, beta) = (2.632, 7.895), [cer] = 0.358280
+(alpha, beta) = (2.632, 8.421), [cer] = 0.381458
+(alpha, beta) = (2.632, 8.947), [cer] = 0.409104
+(alpha, beta) = (2.632, 9.474), [cer] = 0.454901
+(alpha, beta) = (2.632, 10.000), [cer] = 0.502653
+(alpha, beta) = (3.158, 0.000), [cer] = 0.420832
+(alpha, beta) = (3.158, 0.526), [cer] = 0.393466
+(alpha, beta) = (3.158, 1.053), [cer] = 0.377269
+(alpha, beta) = (3.158, 1.579), [cer] = 0.363586
+(alpha, beta) = (3.158, 2.105), [cer] = 0.351299
+(alpha, beta) = (3.158, 2.632), [cer] = 0.334543
+(alpha, beta) = (3.158, 3.158), [cer] = 0.327004
+(alpha, beta) = (3.158, 3.684), [cer] = 0.315554
+(alpha, beta) = (3.158, 4.211), [cer] = 0.315834
+(alpha, beta) = (3.158, 4.737), [cer] = 0.312483
+(alpha, beta) = (3.158, 5.263), [cer] = 0.307177
+(alpha, beta) = (3.158, 5.789), [cer] = 0.305501
+(alpha, beta) = (3.158, 6.316), [cer] = 0.310807
+(alpha, beta) = (3.158, 6.842), [cer] = 0.322536
+(alpha, beta) = (3.158, 7.368), [cer] = 0.335102
+(alpha, beta) = (3.158, 7.895), [cer] = 0.353533
+(alpha, beta) = (3.158, 8.421), [cer] = 0.374197
+(alpha, beta) = (3.158, 8.947), [cer] = 0.397375
+(alpha, beta) = (3.158, 9.474), [cer] = 0.432840
+(alpha, beta) = (3.158, 10.000), [cer] = 0.473611
+(alpha, beta) = (3.684, 0.000), [cer] = 0.469701
+(alpha, beta) = (3.684, 0.526), [cer] = 0.442614
+(alpha, beta) = (3.684, 1.053), [cer] = 0.417481
+(alpha, beta) = (3.684, 1.579), [cer] = 0.394303
+(alpha, beta) = (3.684, 2.105), [cer] = 0.382854
+(alpha, beta) = (3.684, 2.632), [cer] = 0.371684
+(alpha, beta) = (3.684, 3.158), [cer] = 0.359676
+(alpha, beta) = (3.684, 3.684), [cer] = 0.342921
+(alpha, beta) = (3.684, 4.211), [cer] = 0.333147
+(alpha, beta) = (3.684, 4.737), [cer] = 0.331192
+(alpha, beta) = (3.684, 5.263), [cer] = 0.327004
+(alpha, beta) = (3.684, 5.789), [cer] = 0.325328
+(alpha, beta) = (3.684, 6.316), [cer] = 0.322256
+(alpha, beta) = (3.684, 6.842), [cer] = 0.327841
+(alpha, beta) = (3.684, 7.368), [cer] = 0.337336
+(alpha, beta) = (3.684, 7.895), [cer] = 0.345155
+(alpha, beta) = (3.684, 8.421), [cer] = 0.367216
+(alpha, beta) = (3.684, 8.947), [cer] = 0.392907
+(alpha, beta) = (3.684, 9.474), [cer] = 0.415806
+(alpha, beta) = (3.684, 10.000), [cer] = 0.454342
+(alpha, beta) = (4.211, 0.000), [cer] = 0.515498
+(alpha, beta) = (4.211, 0.526), [cer] = 0.486177
+(alpha, beta) = (4.211, 1.053), [cer] = 0.462161
+(alpha, beta) = (4.211, 1.579), [cer] = 0.437867
+(alpha, beta) = (4.211, 2.105), [cer] = 0.420274
+(alpha, beta) = (4.211, 2.632), [cer] = 0.401564
+(alpha, beta) = (4.211, 3.158), [cer] = 0.387601
+(alpha, beta) = (4.211, 3.684), [cer] = 0.373918
+(alpha, beta) = (4.211, 4.211), [cer] = 0.364423
+(alpha, beta) = (4.211, 4.737), [cer] = 0.359118
+(alpha, beta) = (4.211, 5.263), [cer] = 0.348506
+(alpha, beta) = (4.211, 5.789), [cer] = 0.346830
+(alpha, beta) = (4.211, 6.316), [cer] = 0.338732
+(alpha, beta) = (4.211, 6.842), [cer] = 0.338453
+(alpha, beta) = (4.211, 7.368), [cer] = 0.344876
+(alpha, beta) = (4.211, 7.895), [cer] = 0.354650
+(alpha, beta) = (4.211, 8.421), [cer] = 0.368612
+(alpha, beta) = (4.211, 8.947), [cer] = 0.384529
+(alpha, beta) = (4.211, 9.474), [cer] = 0.410221
+(alpha, beta) = (4.211, 10.000), [cer] = 0.446803
+(alpha, beta) = (4.737, 0.000), [cer] = 0.576934
+(alpha, beta) = (4.737, 0.526), [cer] = 0.537001
+(alpha, beta) = (4.737, 1.053), [cer] = 0.506562
+(alpha, beta) = (4.737, 1.579), [cer] = 0.479196
+(alpha, beta) = (4.737, 2.105), [cer] = 0.459369
+(alpha, beta) = (4.737, 2.632), [cer] = 0.434515
+(alpha, beta) = (4.737, 3.158), [cer] = 0.421111
+(alpha, beta) = (4.737, 3.684), [cer] = 0.407428
+(alpha, beta) = (4.737, 4.211), [cer] = 0.391790
+(alpha, beta) = (4.737, 4.737), [cer] = 0.382295
+(alpha, beta) = (4.737, 5.263), [cer] = 0.378386
+(alpha, beta) = (4.737, 5.789), [cer] = 0.371963
+(alpha, beta) = (4.737, 6.316), [cer] = 0.363865
+(alpha, beta) = (4.737, 6.842), [cer] = 0.364423
+(alpha, beta) = (4.737, 7.368), [cer] = 0.358559
+(alpha, beta) = (4.737, 7.895), [cer] = 0.364982
+(alpha, beta) = (4.737, 8.421), [cer] = 0.371684
+(alpha, beta) = (4.737, 8.947), [cer] = 0.388160
+(alpha, beta) = (4.737, 9.474), [cer] = 0.410500
+(alpha, beta) = (4.737, 10.000), [cer] = 0.447361
+(alpha, beta) = (5.263, 0.000), [cer] = 0.611840
+(alpha, beta) = (5.263, 0.526), [cer] = 0.585591
+(alpha, beta) = (5.263, 1.053), [cer] = 0.559620
+(alpha, beta) = (5.263, 1.579), [cer] = 0.525272
+(alpha, beta) = (5.263, 2.105), [cer] = 0.497347
+(alpha, beta) = (5.263, 2.632), [cer] = 0.479475
+(alpha, beta) = (5.263, 3.158), [cer] = 0.454622
+(alpha, beta) = (5.263, 3.684), [cer] = 0.438984
+(alpha, beta) = (5.263, 4.211), [cer] = 0.429210
+(alpha, beta) = (5.263, 4.737), [cer] = 0.416364
+(alpha, beta) = (5.263, 5.263), [cer] = 0.401005
+(alpha, beta) = (5.263, 5.789), [cer] = 0.397934
+(alpha, beta) = (5.263, 6.316), [cer] = 0.389277
+(alpha, beta) = (5.263, 6.842), [cer] = 0.385088
+(alpha, beta) = (5.263, 7.368), [cer] = 0.385367
+(alpha, beta) = (5.263, 7.895), [cer] = 0.385646
+(alpha, beta) = (5.263, 8.421), [cer] = 0.388439
+(alpha, beta) = (5.263, 8.947), [cer] = 0.398492
+(alpha, beta) = (5.263, 9.474), [cer] = 0.412734
+(alpha, beta) = (5.263, 10.000), [cer] = 0.437867
+(alpha, beta) = (5.789, 0.000), [cer] = 0.666015
+(alpha, beta) = (5.789, 0.526), [cer] = 0.622173
+(alpha, beta) = (5.789, 1.053), [cer] = 0.598715
+(alpha, beta) = (5.789, 1.579), [cer] = 0.575538
+(alpha, beta) = (5.789, 2.105), [cer] = 0.545378
+(alpha, beta) = (5.789, 2.632), [cer] = 0.514661
+(alpha, beta) = (5.789, 3.158), [cer] = 0.490924
+(alpha, beta) = (5.789, 3.684), [cer] = 0.478079
+(alpha, beta) = (5.789, 4.211), [cer] = 0.453784
+(alpha, beta) = (5.789, 4.737), [cer] = 0.442893
+(alpha, beta) = (5.789, 5.263), [cer] = 0.431723
+(alpha, beta) = (5.789, 5.789), [cer] = 0.419715
+(alpha, beta) = (5.789, 6.316), [cer] = 0.410221
+(alpha, beta) = (5.789, 6.842), [cer] = 0.404636
+(alpha, beta) = (5.789, 7.368), [cer] = 0.399888
+(alpha, beta) = (5.789, 7.895), [cer] = 0.401843
+(alpha, beta) = (5.789, 8.421), [cer] = 0.404077
+(alpha, beta) = (5.789, 8.947), [cer] = 0.408545
+(alpha, beta) = (5.789, 9.474), [cer] = 0.415247
+(alpha, beta) = (5.789, 10.000), [cer] = 0.428093
+(alpha, beta) = (6.316, 0.000), [cer] = 0.703993
+(alpha, beta) = (6.316, 0.526), [cer] = 0.678581
+(alpha, beta) = (6.316, 1.053), [cer] = 0.637252
+(alpha, beta) = (6.316, 1.579), [cer] = 0.610723
+(alpha, beta) = (6.316, 2.105), [cer] = 0.585870
+(alpha, beta) = (6.316, 2.632), [cer] = 0.557945
+(alpha, beta) = (6.316, 3.158), [cer] = 0.534767
+(alpha, beta) = (6.316, 3.684), [cer] = 0.512427
+(alpha, beta) = (6.316, 4.211), [cer] = 0.489807
+(alpha, beta) = (6.316, 4.737), [cer] = 0.473611
+(alpha, beta) = (6.316, 5.263), [cer] = 0.454063
+(alpha, beta) = (6.316, 5.789), [cer] = 0.443172
+(alpha, beta) = (6.316, 6.316), [cer] = 0.436191
+(alpha, beta) = (6.316, 6.842), [cer] = 0.428930
+(alpha, beta) = (6.316, 7.368), [cer] = 0.423066
+(alpha, beta) = (6.316, 7.895), [cer] = 0.417202
+(alpha, beta) = (6.316, 8.421), [cer] = 0.416364
+(alpha, beta) = (6.316, 8.947), [cer] = 0.421391
+(alpha, beta) = (6.316, 9.474), [cer] = 0.431723
+(alpha, beta) = (6.316, 10.000), [cer] = 0.437029
+(alpha, beta) = (6.842, 0.000), [cer] = 0.755376
+(alpha, beta) = (6.842, 0.526), [cer] = 0.721028
+(alpha, beta) = (6.842, 1.053), [cer] = 0.689751
+(alpha, beta) = (6.842, 1.579), [cer] = 0.652890
+(alpha, beta) = (6.842, 2.105), [cer] = 0.619659
+(alpha, beta) = (6.842, 2.632), [cer] = 0.595364
+(alpha, beta) = (6.842, 3.158), [cer] = 0.574700
+(alpha, beta) = (6.842, 3.684), [cer] = 0.549288
+(alpha, beta) = (6.842, 4.211), [cer] = 0.532533
+(alpha, beta) = (6.842, 4.737), [cer] = 0.509913
+(alpha, beta) = (6.842, 5.263), [cer] = 0.483943
+(alpha, beta) = (6.842, 5.789), [cer] = 0.475565
+(alpha, beta) = (6.842, 6.316), [cer] = 0.461603
+(alpha, beta) = (6.842, 6.842), [cer] = 0.451829
+(alpha, beta) = (6.842, 7.368), [cer] = 0.445686
+(alpha, beta) = (6.842, 7.895), [cer] = 0.439821
+(alpha, beta) = (6.842, 8.421), [cer] = 0.438984
+(alpha, beta) = (6.842, 8.947), [cer] = 0.438425
+(alpha, beta) = (6.842, 9.474), [cer] = 0.443731
+(alpha, beta) = (6.842, 10.000), [cer] = 0.445127
+(alpha, beta) = (7.368, 0.000), [cer] = 0.783022
+(alpha, beta) = (7.368, 0.526), [cer] = 0.761240
+(alpha, beta) = (7.368, 1.053), [cer] = 0.732198
+(alpha, beta) = (7.368, 1.579), [cer] = 0.698688
+(alpha, beta) = (7.368, 2.105), [cer] = 0.664060
+(alpha, beta) = (7.368, 2.632), [cer] = 0.636694
+(alpha, beta) = (7.368, 3.158), [cer] = 0.607093
+(alpha, beta) = (7.368, 3.684), [cer] = 0.581960
+(alpha, beta) = (7.368, 4.211), [cer] = 0.558224
+(alpha, beta) = (7.368, 4.737), [cer] = 0.542586
+(alpha, beta) = (7.368, 5.263), [cer] = 0.527506
+(alpha, beta) = (7.368, 5.789), [cer] = 0.508796
+(alpha, beta) = (7.368, 6.316), [cer] = 0.489249
+(alpha, beta) = (7.368, 6.842), [cer] = 0.477241
+(alpha, beta) = (7.368, 7.368), [cer] = 0.471097
+(alpha, beta) = (7.368, 7.895), [cer] = 0.466350
+(alpha, beta) = (7.368, 8.421), [cer] = 0.460486
+(alpha, beta) = (7.368, 8.947), [cer] = 0.456018
+(alpha, beta) = (7.368, 9.474), [cer] = 0.463278
+(alpha, beta) = (7.368, 10.000), [cer] = 0.466909
+(alpha, beta) = (7.895, 0.000), [cer] = 0.825468
+(alpha, beta) = (7.895, 0.526), [cer] = 0.792237
+(alpha, beta) = (7.895, 1.053), [cer] = 0.764591
+(alpha, beta) = (7.895, 1.579), [cer] = 0.739738
+(alpha, beta) = (7.895, 2.105), [cer] = 0.714605
+(alpha, beta) = (7.895, 2.632), [cer] = 0.679978
+(alpha, beta) = (7.895, 3.158), [cer] = 0.651494
+(alpha, beta) = (7.895, 3.684), [cer] = 0.615750
+(alpha, beta) = (7.895, 4.211), [cer] = 0.591734
+(alpha, beta) = (7.895, 4.737), [cer] = 0.574141
+(alpha, beta) = (7.895, 5.263), [cer] = 0.555990
+(alpha, beta) = (7.895, 5.789), [cer] = 0.540073
+(alpha, beta) = (7.895, 6.316), [cer] = 0.530299
+(alpha, beta) = (7.895, 6.842), [cer] = 0.513264
+(alpha, beta) = (7.895, 7.368), [cer] = 0.499302
+(alpha, beta) = (7.895, 7.895), [cer] = 0.490645
+(alpha, beta) = (7.895, 8.421), [cer] = 0.479196
+(alpha, beta) = (7.895, 8.947), [cer] = 0.477241
+(alpha, beta) = (7.895, 9.474), [cer] = 0.478079
+(alpha, beta) = (7.895, 10.000), [cer] = 0.476682
+(alpha, beta) = (8.421, 0.000), [cer] = 0.852834
+(alpha, beta) = (8.421, 0.526), [cer] = 0.829936
+(alpha, beta) = (8.421, 1.053), [cer] = 0.802848
+(alpha, beta) = (8.421, 1.579), [cer] = 0.767383
+(alpha, beta) = (8.421, 2.105), [cer] = 0.748953
+(alpha, beta) = (8.421, 2.632), [cer] = 0.724937
+(alpha, beta) = (8.421, 3.158), [cer] = 0.695057
+(alpha, beta) = (8.421, 3.684), [cer] = 0.655404
+(alpha, beta) = (8.421, 4.211), [cer] = 0.635018
+(alpha, beta) = (8.421, 4.737), [cer] = 0.603742
+(alpha, beta) = (8.421, 5.263), [cer] = 0.583077
+(alpha, beta) = (8.421, 5.789), [cer] = 0.568277
+(alpha, beta) = (8.421, 6.316), [cer] = 0.554314
+(alpha, beta) = (8.421, 6.842), [cer] = 0.545658
+(alpha, beta) = (8.421, 7.368), [cer] = 0.524993
+(alpha, beta) = (8.421, 7.895), [cer] = 0.511868
+(alpha, beta) = (8.421, 8.421), [cer] = 0.506562
+(alpha, beta) = (8.421, 8.947), [cer] = 0.496230
+(alpha, beta) = (8.421, 9.474), [cer] = 0.493158
+(alpha, beta) = (8.421, 10.000), [cer] = 0.493717
+(alpha, beta) = (8.947, 0.000), [cer] = 0.885786
+(alpha, beta) = (8.947, 0.526), [cer] = 0.862050
+(alpha, beta) = (8.947, 1.053), [cer] = 0.832449
+(alpha, beta) = (8.947, 1.579), [cer] = 0.813739
+(alpha, beta) = (8.947, 2.105), [cer] = 0.772689
+(alpha, beta) = (8.947, 2.632), [cer] = 0.752583
+(alpha, beta) = (8.947, 3.158), [cer] = 0.729684
+(alpha, beta) = (8.947, 3.684), [cer] = 0.703993
+(alpha, beta) = (8.947, 4.211), [cer] = 0.672159
+(alpha, beta) = (8.947, 4.737), [cer] = 0.646188
+(alpha, beta) = (8.947, 5.263), [cer] = 0.623848
+(alpha, beta) = (8.947, 5.789), [cer] = 0.598715
+(alpha, beta) = (8.947, 6.316), [cer] = 0.580564
+(alpha, beta) = (8.947, 6.842), [cer] = 0.569953
+(alpha, beta) = (8.947, 7.368), [cer] = 0.552080
+(alpha, beta) = (8.947, 7.895), [cer] = 0.538956
+(alpha, beta) = (8.947, 8.421), [cer] = 0.523038
+(alpha, beta) = (8.947, 8.947), [cer] = 0.516615
+(alpha, beta) = (8.947, 9.474), [cer] = 0.511310
+(alpha, beta) = (8.947, 10.000), [cer] = 0.515778
+(alpha, beta) = (9.474, 0.000), [cer] = 0.905054
+(alpha, beta) = (9.474, 0.526), [cer] = 0.889696
+(alpha, beta) = (9.474, 1.053), [cer] = 0.869310
+(alpha, beta) = (9.474, 1.579), [cer] = 0.845853
+(alpha, beta) = (9.474, 2.105), [cer] = 0.815415
+(alpha, beta) = (9.474, 2.632), [cer] = 0.777157
+(alpha, beta) = (9.474, 3.158), [cer] = 0.758447
+(alpha, beta) = (9.474, 3.684), [cer] = 0.739738
+(alpha, beta) = (9.474, 4.211), [cer] = 0.709299
+(alpha, beta) = (9.474, 4.737), [cer] = 0.675789
+(alpha, beta) = (9.474, 5.263), [cer] = 0.659034
+(alpha, beta) = (9.474, 5.789), [cer] = 0.633901
+(alpha, beta) = (9.474, 6.316), [cer] = 0.617984
+(alpha, beta) = (9.474, 6.842), [cer] = 0.586428
+(alpha, beta) = (9.474, 7.368), [cer] = 0.576655
+(alpha, beta) = (9.474, 7.895), [cer] = 0.565485
+(alpha, beta) = (9.474, 8.421), [cer] = 0.552360
+(alpha, beta) = (9.474, 8.947), [cer] = 0.541748
+(alpha, beta) = (9.474, 9.474), [cer] = 0.527506
+(alpha, beta) = (9.474, 10.000), [cer] = 0.524714
+(alpha, beta) = (10.000, 0.000), [cer] = 0.927674
+(alpha, beta) = (10.000, 0.526), [cer] = 0.909243
+(alpha, beta) = (10.000, 1.053), [cer] = 0.890533
+(alpha, beta) = (10.000, 1.579), [cer] = 0.878526
+(alpha, beta) = (10.000, 2.105), [cer] = 0.851997
+(alpha, beta) = (10.000, 2.632), [cer] = 0.819324
+(alpha, beta) = (10.000, 3.158), [cer] = 0.789444
+(alpha, beta) = (10.000, 3.684), [cer] = 0.762357
+(alpha, beta) = (10.000, 4.211), [cer] = 0.743368
+(alpha, beta) = (10.000, 4.737), [cer] = 0.714605
+(alpha, beta) = (10.000, 5.263), [cer] = 0.686680
+(alpha, beta) = (10.000, 5.789), [cer] = 0.672438
+(alpha, beta) = (10.000, 6.316), [cer] = 0.641720
+(alpha, beta) = (10.000, 6.842), [cer] = 0.622452
+(alpha, beta) = (10.000, 7.368), [cer] = 0.600949
+(alpha, beta) = (10.000, 7.895), [cer] = 0.590617
+(alpha, beta) = (10.000, 8.421), [cer] = 0.573862
+(alpha, beta) = (10.000, 8.947), [cer] = 0.562692
+(alpha, beta) = (10.000, 9.474), [cer] = 0.552360
+(alpha, beta) = (10.000, 10.000), [cer] = 0.549567
+
+Finish tuning on 1 batches, final opt (alpha, beta) = (2.105, 3.684)
+2020-03-09 18:16:45,851-INFO: finish tuning
+[1;33mλ [1;37mdgx-18-04 [1;32m/DeepSpeech/examples/aishell2[1;33m[0m 
