@@ -1,0 +1,308 @@
+syh [K[K[K[Ksh run_train-C3R72048.sh 
+grep: warning: GREP_OPTIONS is deprecated; please use an alias or script
+-----------  Configuration Arguments -----------
+augment_conf_path: conf/augmentation.config
+batch_size: 16
+dev_manifest: data/aishell2/manifest.dev
+init_from_pretrained_model: None
+is_local: 1
+learning_rate: 0.0005
+max_duration: 27.0
+mean_std_path: data/aishell2/mean_std.npz
+min_duration: 0.0
+num_conv_layers: 3
+num_epoch: 10
+num_iter_print: 100
+num_rnn_layers: 7
+num_samples: 999078
+output_model_dir: ./checkpoints/aishell2-C3R72048
+rnn_layer_size: 2048
+save_epoch: 1
+share_rnn_weights: 0
+shuffle_method: batch_shuffle_clipped
+specgram_type: linear
+test_off: 0
+train_manifest: data/aishell2/manifest.train
+use_gpu: 1
+use_gru: 1
+use_sortagrad: 1
+vocab_path: data/aishell2/vocab.txt
+------------------------------------------------
+W0309 18:23:13.934463   299 device_context.cc:236] Please NOTE: device: 0, CUDA Capability: 70, Driver API Version: 10.2, Runtime API Version: 10.0
+W0309 18:23:13.937371   299 device_context.cc:244] device: 0, cuDNN Version: 7.5.
+W0309 18:23:13.937387   299 device_context.cc:270] WARNING: device: 0. The installed Paddle is compiled with CUDNN 7.6, but CUDNN version in your machine is 7.5, which may cause serious incompatible bug. Please recompile or reinstall Paddle with compatible CUDNN version.
+I0309 18:23:14.976490   299 parallel_executor.cc:421] The number of CUDAPlace, which is used in ParallelExecutor, is 8. And the Program will be copied 8 copies
+W0309 18:23:37.120260   299 fuse_all_reduce_op_pass.cc:72] Find all_reduce operators: 81. To make the speed faster, some all_reduce ops are fused during training, after fusion, the number of all_reduce ops is 81.
+I0309 18:23:37.136898   299 build_strategy.cc:363] SeqOnlyAllReduceOps:0, num_trainers:1
+I0309 18:23:37.533845   299 parallel_executor.cc:285] Inplace strategy is enabled, when build_strategy.enable_inplace = True
+I0309 18:23:37.640403   299 parallel_executor.cc:368] Garbage collection strategy is enabled, when FLAGS_eager_delete_tensor_gb = 0
+epoch: 0, batch: 0, train loss: 156.393784
+
+epoch: 0, batch: 100, train loss: 18.796995
+
+epoch: 0, batch: 200, train loss: 12.813090
+
+epoch: 0, batch: 300, train loss: 22.977665
+
+epoch: 0, batch: 400, train loss: 32.422531
+
+epoch: 0, batch: 500, train loss: 37.346619
+
+epoch: 0, batch: 600, train loss: 25.451969
+
+epoch: 0, batch: 700, train loss: 8.977603
+
+epoch: 0, batch: 800, train loss: 18.169634
+
+epoch: 0, batch: 900, train loss: 12.726752
+
+epoch: 0, batch: 1000, train loss: 6.801029
+
+epoch: 0, batch: 1100, train loss: 24.428699
+
+epoch: 0, batch: 1200, train loss: 18.684830
+
+epoch: 0, batch: 1300, train loss: 2.183220
+
+epoch: 0, batch: 1400, train loss: 76.601364
+
+epoch: 0, batch: 1500, train loss: 6.198771
+
+epoch: 0, batch: 1600, train loss: 21.485861
+
+epoch: 0, batch: 1700, train loss: 15.882393
+
+epoch: 0, batch: 1800, train loss: 7.841202
+
+epoch: 0, batch: 1900, train loss: 2.076325
+
+epoch: 0, batch: 2000, train loss: 19.618587
+
+epoch: 0, batch: 2100, train loss: 18.054634
+
+epoch: 0, batch: 2200, train loss: 17.918766
+
+epoch: 0, batch: 2300, train loss: 17.125395
+
+epoch: 0, batch: 2400, train loss: 11.778034
+
+epoch: 0, batch: 2500, train loss: 25.445034
+
+epoch: 0, batch: 2600, train loss: 9.487888
+
+epoch: 0, batch: 2700, train loss: 17.395000
+
+epoch: 0, batch: 2800, train loss: 16.117218
+
+epoch: 0, batch: 2900, train loss: 18.204485
+
+epoch: 0, batch: 3000, train loss: 9.419806
+
+epoch: 0, batch: 3100, train loss: 9.091735
+
+epoch: 0, batch: 3200, train loss: 12.586823
+
+epoch: 0, batch: 3300, train loss: 11.244313
+
+epoch: 0, batch: 3400, train loss: 10.789678
+
+epoch: 0, batch: 3500, train loss: 8.837509
+
+epoch: 0, batch: 3600, train loss: 7.798234
+
+epoch: 0, batch: 3700, train loss: 8.042427
+
+epoch: 0, batch: 3800, train loss: 11.130072
+
+epoch: 0, batch: 3900, train loss: 10.850405
+
+epoch: 0, batch: 4000, train loss: 11.533700
+
+epoch: 0, batch: 4100, train loss: 17.850716
+
+epoch: 0, batch: 4200, train loss: 12.724958
+
+epoch: 0, batch: 4300, train loss: 20.419937
+
+epoch: 0, batch: 4400, train loss: 8.010063
+
+epoch: 0, batch: 4500, train loss: 17.609669
+
+epoch: 0, batch: 4600, train loss: 8.319033
+
+epoch: 0, batch: 4700, train loss: 8.451794
+
+epoch: 0, batch: 4800, train loss: 15.913042
+
+epoch: 0, batch: 4900, train loss: 15.041311
+
+epoch: 0, batch: 5000, train loss: 12.585403
+
+epoch: 0, batch: 5100, train loss: 7.219332
+
+epoch: 0, batch: 5200, train loss: 13.918262
+
+epoch: 0, batch: 5300, train loss: 9.693596
+
+epoch: 0, batch: 5400, train loss: 12.384348
+
+epoch: 0, batch: 5500, train loss: 5.278149
+
+epoch: 0, batch: 5600, train loss: 14.009550
+
+epoch: 0, batch: 5700, train loss: 12.018381
+
+epoch: 0, batch: 5800, train loss: 10.098988
+
+epoch: 0, batch: 5900, train loss: 9.019163
+
+epoch: 0, batch: 6000, train loss: 5.196203
+
+epoch: 0, batch: 6100, train loss: 9.202325
+
+epoch: 0, batch: 6200, train loss: 11.903739
+
+epoch: 0, batch: 6300, train loss: 19.437191
+
+epoch: 0, batch: 6400, train loss: 6.042097
+
+epoch: 0, batch: 6500, train loss: 15.552188
+
+epoch: 0, batch: 6600, train loss: 11.481130
+
+epoch: 0, batch: 6700, train loss: 7.908575
+
+epoch: 0, batch: 6800, train loss: 13.179674
+
+epoch: 0, batch: 6900, train loss: 13.238835
+
+epoch: 0, batch: 7000, train loss: 10.649199
+
+epoch: 0, batch: 7100, train loss: 9.245565
+
+epoch: 0, batch: 7200, train loss: 13.870726
+
+epoch: 0, batch: 7300, train loss: 7.662865
+
+W0309 20:52:45.226958   427 operator.cc:179] square raises an exception paddle::memory::allocation::BadAlloc, 
+
+--------------------------------------------
+C++ Call Stacks (More useful to developers):
+--------------------------------------------
+0   paddle::memory::detail::GPUAllocator::Alloc(unsigned long*, unsigned long)
+1   paddle::memory::detail::BuddyAllocator::RefillPool(unsigned long)
+2   paddle::memory::detail::BuddyAllocator::Alloc(unsigned long)
+3   void* paddle::memory::legacy::Alloc<paddle::platform::CUDAPlace>(paddle::platform::CUDAPlace const&, unsigned long)
+4   paddle::memory::allocation::NaiveBestFitAllocator::AllocateImpl(unsigned long)
+5   paddle::memory::allocation::Allocator::Allocate(unsigned long)
+6   paddle::memory::allocation::RetryAllocator::AllocateImpl(unsigned long)
+7   paddle::memory::allocation::AllocatorFacade::Alloc(paddle::platform::Place const&, unsigned long)
+8   paddle::memory::allocation::AllocatorFacade::AllocShared(paddle::platform::Place const&, unsigned long)
+9   paddle::memory::AllocShared(paddle::platform::Place const&, unsigned long)
+10  paddle::framework::Tensor::mutable_data(paddle::platform::Place, paddle::framework::proto::VarType_Type, unsigned long)
+11  paddle::operators::ActivationKernel<paddle::platform::CUDADeviceContext, paddle::operators::SquareFunctor<float> >::Compute(paddle::framework::ExecutionContext const&) const
+12  std::_Function_handler<void (paddle::framework::ExecutionContext const&), paddle::framework::OpKernelRegistrarFunctor<paddle::platform::CUDAPlace, false, 0ul, paddle::operators::ActivationKernel<paddle::platform::CUDADeviceContext, paddle::operators::SquareFunctor<float> >, paddle::operators::ActivationKernel<paddle::platform::CUDADeviceContext, paddle::operators::SquareFunctor<double> >, paddle::operators::ActivationKernel<paddle::platform::CUDADeviceContext, paddle::operators::SquareFunctor<paddle::platform::float16> > >::operator()(char const*, char const*, int) const::{lambda(paddle::framework::ExecutionContext const&)#1}>::_M_invoke(std::_Any_data const&, paddle::framework::ExecutionContext const&)
+13  paddle::framework::OperatorWithKernel::RunImpl(paddle::framework::Scope const&, paddle::platform::Place const&, paddle::framework::RuntimeContext*) const
+14  paddle::framework::OperatorWithKernel::RunImpl(paddle::framework::Scope const&, paddle::platform::Place const&) const
+15  paddle::framework::OperatorBase::Run(paddle::framework::Scope const&, paddle::platform::Place const&)
+16  paddle::framework::details::ComputationOpHandle::RunImpl()
+17  paddle::framework::details::FastThreadedSSAGraphExecutor::RunOpSync(paddle::framework::details::OpHandleBase*)
+18  paddle::framework::details::FastThreadedSSAGraphExecutor::RunOp(paddle::framework::details::OpHandleBase*, std::shared_ptr<paddle::framework::BlockingQueue<unsigned long> > const&, unsigned long*)
+19  std::_Function_handler<std::unique_ptr<std::__future_base::_Result_base, std::__future_base::_Result_base::_Deleter> (), std::__future_base::_Task_setter<std::unique_ptr<std::__future_base::_Result<void>, std::__future_base::_Result_base::_Deleter>, void> >::_M_invoke(std::_Any_data const&)
+20  std::__future_base::_State_base::_M_do_set(std::function<std::unique_ptr<std::__future_base::_Result_base, std::__future_base::_Result_base::_Deleter> ()>&, bool&)
+21  ThreadPool::ThreadPool(unsigned long)::{lambda()#1}::operator()() const
+
+----------------------
+Error Message Summary:
+----------------------
+
+
+Out of memory error on GPU 7. Cannot allocate 81.797119MB memory on GPU 7, available memory is only 29.437500MB.
+
+Please check whether there is any other process using GPU 7.
+1. If yes, please stop them, or start PaddlePaddle on another GPU.
+2. If no, please try one of the following suggestions:
+   1) Decrease the batch size of your model.
+   2) FLAGS_fraction_of_gpu_memory_to_use is 0.92 now, please set it to a higher value but less than 1.0.
+      The command is `export FLAGS_fraction_of_gpu_memory_to_use=xxx`.
+
+ at (/paddle/paddle/fluid/memory/detail/system_allocator.cc:151)
+F0309 20:52:45.227052   427 exception_holder.h:37] std::exception caught, 
+
+--------------------------------------------
+C++ Call Stacks (More useful to developers):
+--------------------------------------------
+0   paddle::memory::detail::GPUAllocator::Alloc(unsigned long*, unsigned long)
+1   paddle::memory::detail::BuddyAllocator::RefillPool(unsigned long)
+2   paddle::memory::detail::BuddyAllocator::Alloc(unsigned long)
+3   void* paddle::memory::legacy::Alloc<paddle::platform::CUDAPlace>(paddle::platform::CUDAPlace const&, unsigned long)
+4   paddle::memory::allocation::NaiveBestFitAllocator::AllocateImpl(unsigned long)
+5   paddle::memory::allocation::Allocator::Allocate(unsigned long)
+6   paddle::memory::allocation::RetryAllocator::AllocateImpl(unsigned long)
+7   paddle::memory::allocation::AllocatorFacade::Alloc(paddle::platform::Place const&, unsigned long)
+8   paddle::memory::allocation::AllocatorFacade::AllocShared(paddle::platform::Place const&, unsigned long)
+9   nvoke(std::_Any_data const&, paddle::framework::ExecutionContext const&)
+13  paddle::framework::OperatorWithKernel::RunImpl(paddle::framework::Scope const&, paddle::platform::Place const&, paddle::framework::RuntimeContext*) const
+14  paddle::framework::OperatorWithKernel::RunImpl(paddle::framework::Scope const&, paddle::platform::Place const&) const
+15  paddle::framework::OperatorBase::Run(paddle::framework::Scope const&, paddle::platform::Place const&)
+16  paddle::framework::details::ComputationOpHandle::RunImpl()
+17  paddle::framework::details::FastThreadedSSAGraphExecutor::RunOpSync(paddle::framework::details::OpHandleBase*)
+18  paddle::framework::details::FastThreadedSSAGraphExecutor::RunOp(paddle::framework::details::OpHandleBase*, std::shared_ptr<paddle::framework::BlockingQueue<unsigned long> > const&, unsigned long*)
+19  std::_Function_handler<std::unique_ptr<std::__future_base::_Result_base, std::__future_base::_Result_base::_Deleter> (), std::__future_base::_Task_setter<std::unique_ptr<std::__future_base::_Result<void>, std::__future_base::_Result_base::_Deleter>, void> >::_M_invoke(std::_Any_data const&)
+20  std::__future_base::_State_base::_M_do_set(std::function<std::unique_ptr<std::__future_base::_Result_base, std::__future_base::_Result_base::_Deleter> ()>&, bool&)
+21  ThreadPool::ThreadPool(unsigned long)::{lambda()#1}::operator()() const
+
+----------------------
+Error Message Summary:
+----------------------
+
+
+Out of memory error on GPU 7. Cannot allocate 81.797119MB memory on GPU 7, available memory is only 29.437500MB.
+
+Please check whether there is any other process using GPU 7.
+1. If yes, please stop them, or start PaddlePaddle on another GPU.
+2. If no, please try one of the following suggestions:
+   1) Decrease the batch size of your model.
+   2) FLAGS_fraction_of_gpu_memory_to_use is 0.92 now, please set it to a higher value but less than 1.0.
+      The command is `export FLAGS_fraction_of_gpu_memory_to_use=xxx`.
+
+ at (/paddle/paddle/fluid/memory/detail/system_alloca__future_base::_Result<void>, std::__future_base::_Result_base::_Deleter>, void> >::_M_invoke(std::_Any_data const&)
+20  std::__future_base::_State_base::_M_do_set(std::function<std::unique_ptr<std::__future_base::_Result_base, std::__future_base::_Result_base::_Deleter> ()>&, bool&)
+21  ThreadPool::ThreadPool(unsigned long)::{lambda()#1}::operator()() const
+
+----------------------
+Error Message Summary:
+----------------------
+
+
+Out of memory error on GPU 7. Cannot allocate 81.797119MB memory on GPU 7, available memory is only 29.437500MB.
+
+Please check whether there is any other process using GPU 7.
+1. If yes, please stop them, or start PaddlePaddle on another GPU.
+2. If no, please try one of the following suggestions:
+   1) Decrease the batch size of your model.
+   2) FLAGS_fraction_of_gpu_memory_to_use is 0.92 now, please set it to a higher value but less than 1.0.
+      The command is `export FLAGS_fraction_of_gpu_memory_to_use=xxx`.
+
+ at (/paddle/paddle/fluid/memory/detail/system_allocaure_base::_State_base::_M_do_set()
+    @     0x7f61e2871a99  __pthread_once_slow
+    @     0x7f6120195702  _ZNSt13__future_base11_Task_stateISt5_BindIFZN6paddle9framework7details28FastThreadedSSAGraphExecutor10RunOpAsyncEPSt13unordered_mapIPNS4_12OpHandleBaseESt6atomicIiESt4hashIS8_ESt8equal_toIS8_ESaISt4pairIKS8_SA_EEES8_RKSt10shared_ptrINS3_13BlockingQueueImEEEEUlvE_vEESaIiEFvvEE6_M_runEv
+    @     0x7f611daea5f4  _ZZN10ThreadPoolC1EmENKUlvE_clEv
+    @     0x7f61d427fc80  (unknown)
+    @     0x7f61e286a6ba  start_thread
+    @     0x7f61e25a041d  clone
+    @              (nil)  (unknown)
+dlerIFvvESt17reference_wrapperISt12_Bind_simpleIFS1_ISt5_BindIFZN6paddle9framework7details28FastThreadedSSAGraphExecutor10RunOpAsyncEPSt13unordered_mapIPNS6_12OpHandleBaseESt6atomicIiESt4hashISA_ESt8equal_toISA_ESaISt4pairIKSA_SC_EEESA_RKSt10shared_ptrINS5_13BlockingQueueImEEEEUlvE_vEEEvEEEE9_M_invokeERKSt9_Any_data
+    @     0x7f611dc9cd13  std::_Function_handler<>::_M_invoke()
+    @     0x7f611dae8e37  std::__future_base::_State_base::_M_do_set()
+    @     0x7f61e2871a99  __pthread_once_slow
+    @     0x7f6120195702  _ZNSt13__future_base11_Task_stateISt5_BindIFZN6paddle9framework7details28FastThreadedSSAGraphExecutor10RunOpAsyncEPSt13unordered_mapIPNS4_12OpHandleBaseESt6atomicIiESt4hashIS8_ESt8equal_toIS8_ESaISt4pairIKS8_SA_EEES8_RKSt10shared_ptrINS3_13BlockingQueueImEEEEUlvE_vEESaIiEFvvEE6_M_runEv
+    @     0x7f611daea5f4  _ZZN10ThreadPoolC1EmENKUlvE_clEv
+    @     0x7f61d427fc80  (unknown)
+    @     0x7f61e286a6ba  start_thread
+    @     0x7f61e25a041d  clone
+    @              (nil)  (unknown)
+Aborted (core dumped)
+Failed in training!
+[1;33mλ [1;37mdgx-18-04 [1;32m/DeepSpeech/examples/aishell2[1;33m[0m packet_write_wait: Connection to 10.110.49.17 port 22: Broken pipe
+(base) [36mkarlkao[m@[32mngvpn01-162-249:[33;1m~/Desktop[m$ logout
