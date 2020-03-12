@@ -32,6 +32,7 @@ python -u train.py \
 --augment_conf_path='conf/augmentation.config' \
 --specgram_type='linear' \
 --shuffle_method='batch_shuffle_clipped' \
+#--init_from_pretrained_model="./checkpoints/aishell2-C3R71024/epoch_6" \
 
 if [ $? -ne 0 ]; then
     echo "Failed in training!"
