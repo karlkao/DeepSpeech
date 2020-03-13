@@ -31,6 +31,8 @@ python -u tools/tune.py \
 --error_rate_type='cer' \
 --specgram_type='linear'
 
+#--lang_model_path='models/lm/zhidao_giga.klm' \
+
 if [ $? -ne 0 ]; then
     echo "Failed in tuning!"
     exit 1
