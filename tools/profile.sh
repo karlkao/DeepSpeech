@@ -8,12 +8,12 @@ join_by () {
 	local IFS="$1"; shift; echo "$*";
 }
 
-#for NUM_GPUS in 16 8 4 2 1
-for NUM_GPUS in 8 4 2 1
+for NUM_GPUS in 16 8 4 2 1
+#for NUM_GPUS in 8 4 2 1
 do
-  DEVICES=$(join_by , $(seq 0 $(($NUM_GPUS-1))))
+  DEVICES=$(join_by , $(seq 0 $(($NUM_GPUS-1))|sed 's/^3//g'))
   BATCH_SIZE=$(($BATCH_SIZE_PER_GPU))
-
+  echo ${DEVICES}
   CUDA_VISIBLE_DEVICES=$DEVICES \
   python train.py \
   --batch_size=$BATCH_SIZE \
