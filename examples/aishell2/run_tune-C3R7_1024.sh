@@ -3,7 +3,7 @@
 cd ../.. > /dev/null
 
 # grid-search for hyper-parameters in language model
-CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 \
+CUDA_VISIBLE_DEVICES=0,1,2,4,5,6,7,8,9,10,11,12,13,14,15 \
 python -u tools/tune.py \
 --num_batches=-1 \
 --batch_size=256 \
@@ -12,12 +12,12 @@ python -u tools/tune.py \
 --num_conv_layers=3 \
 --num_rnn_layers=7 \
 --rnn_layer_size=1024 \
---num_alphas=5 \
---num_betas=5 \
---alpha_from=1.8 \
---alpha_to=2.2 \
---beta_from=3.5 \
---beta_to=4.5 \
+--num_alphas=10 \
+--num_betas=10 \
+--alpha_from=0 \
+--alpha_to=10 \
+--beta_from=0 \
+--beta_to=10 \
 --cutoff_prob=1.0 \
 --cutoff_top_n=40 \
 --use_gru=True \

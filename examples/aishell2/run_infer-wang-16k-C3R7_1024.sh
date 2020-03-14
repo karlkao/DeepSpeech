@@ -20,8 +20,8 @@ python -u infer.py \
 --num_conv_layers=3 \
 --num_rnn_layers=7 \
 --rnn_layer_size=1024 \
---alpha=2.6 \
---beta=5.0 \
+--alpha=1.8 \
+--beta=4.0 \
 --cutoff_prob=0.99 \
 --cutoff_top_n=40 \
 --use_gru=True \

@@ -5,7 +5,7 @@ cd ../.. > /dev/null
 # train model
 # if you wish to resume from an exists model, uncomment --init_from_pretrained_model
 export FLAGS_sync_nccl_allreduce=0
-CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 \
+CUDA_VISIBLE_DEVICES=0,1,2,4,5,6,7,8,9,10,11,12,13,14,15 \
 python -u train.py \
 --batch_size=16 \
 --num_epoch=10 \
@@ -32,7 +32,7 @@ python -u train.py \
 --augment_conf_path='conf/augmentation.config' \
 --specgram_type='linear' \
 --shuffle_method='batch_shuffle_clipped' \
-#--init_from_pretrained_model="./checkpoints/aishell2-C3R71024/epoch_6" \
+--init_from_pretrained_model="./checkpoints/aishell2-C3R71024/epoch_19" \
 
 if [ $? -ne 0 ]; then
     echo "Failed in training!"
