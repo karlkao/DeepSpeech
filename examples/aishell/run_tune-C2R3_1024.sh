@@ -27,11 +27,11 @@ python -u tools/tune.py \
 --mean_std_path='data/aishell/mean_std.npz' \
 --vocab_path='data/aishell/vocab.txt' \
 --model_path='checkpoints/aishell/step_final' \
---lang_model_path='models/lm/zh_giga.no_cna_cmn.prune01244.klm' \
+--lang_model_path='models/lm/zhidao_giga.klm' \
 --error_rate_type='cer' \
 --specgram_type='linear'
 
-#--lang_model_path='models/lm/zhidao_giga.klm' \
+#--lang_model_path='models/lm/zh_giga.no_cna_cmn.prune01244.klm' \
 
 if [ $? -ne 0 ]; then
     echo "Failed in tuning!"

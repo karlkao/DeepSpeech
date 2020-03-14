@@ -1,0 +1,30 @@
+-----------  Configuration Arguments -----------
+alpha_from: 0.0
+alpha_to: 10.0
+batch_size: 256
+beam_size: 500
+beta_from: 0.0
+beta_to: 10.0
+cutoff_prob: 1.0
+cutoff_top_n: 40
+error_rate_type: cer
+lang_model_path: models/lm/zhidao_giga.klm
+mean_std_path: data/aishell/mean_std.npz
+model_path: checkpoints/aishell/step_final
+num_alphas: 20
+num_batches: -1
+num_betas: 20
+num_conv_layers: 2
+num_proc_bsearch: 12
+num_rnn_layers: 3
+rnn_layer_size: 1024
+share_rnn_weights: 0
+specgram_type: linear
+trainer_count: 8
+tune_manifest: data/Wang/16k/manifest.dev
+use_gpu: 1
+use_gru: 1
+vocab_path: data/aishell/vocab.txt
+------------------------------------------------
+finish initing model from pretrained params from checkpoints/aishell/step_final
+.................................................................................
