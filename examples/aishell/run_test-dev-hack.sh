@@ -14,8 +14,8 @@ python -u train.py \
 --rnn_layer_size=1024 \
 --num_iter_print=100 \
 --save_epoch=1 \
---num_samples=120000 \
---learning_rate=4.2 \
+--num_samples=225 \
+--learning_rate=2.6 \
 --max_duration=27.0 \
 --min_duration=0.0 \
 --test_off=False \
@@ -24,8 +24,8 @@ python -u train.py \
 --use_gpu=True \
 --is_local=True \
 --share_rnn_weights=False \
---train_manifest='data/aishell/manifest.train' \
---dev_manifest='data/aishell/manifest.dev' \
+--train_manifest='data/Wang/16k/manifest.dev' \
+--dev_manifest='data/Wang/16k/manifest.dev' \
 --mean_std_path='data/aishell/mean_std.npz' \
 --vocab_path='data/aishell/vocab.txt' \
 --output_model_dir='./checkpoints/aishell' \

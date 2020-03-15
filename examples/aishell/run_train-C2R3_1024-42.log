@@ -1,0 +1,36 @@
+-----------  Configuration Arguments -----------
+augment_conf_path: conf/augmentation.config
+batch_size: 16
+dev_manifest: data/aishell/manifest.dev
+init_from_pretrained_model: ./checkpoints/aishell/step_final
+is_local: 1
+learning_rate: 4.2
+max_duration: 27.0
+mean_std_path: data/aishell/mean_std.npz
+min_duration: 0.0
+num_conv_layers: 2
+num_epoch: 1
+num_iter_print: 100
+num_rnn_layers: 3
+num_samples: 120000
+output_model_dir: ./checkpoints/aishell
+rnn_layer_size: 1024
+save_epoch: 1
+share_rnn_weights: 0
+shuffle_method: batch_shuffle_clipped
+specgram_type: linear
+test_off: 0
+train_manifest: data/aishell/manifest.train
+use_gpu: 1
+use_gru: 1
+use_sortagrad: 1
+vocab_path: data/aishell/vocab.txt
+------------------------------------------------
+finish initing model from pretrained params from ./checkpoints/aishell/step_final
+
+----------Begin test...
+--------Time: 19.941976 sec, epoch: 1, train loss: nan, test loss: nan
+save parameters at ./checkpoints/aishell/epoch_1
+save parameters at ./checkpoints/aishell/step_final
+
+------------Training finished!!!-------------
