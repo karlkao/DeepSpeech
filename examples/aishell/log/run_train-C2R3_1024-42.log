@@ -4,12 +4,12 @@ batch_size: 16
 dev_manifest: data/aishell/manifest.dev
 init_from_pretrained_model: ./checkpoints/aishell/step_final
 is_local: 1
-learning_rate: 4.2
+learning_rate: 0.0005
 max_duration: 27.0
 mean_std_path: data/aishell/mean_std.npz
 min_duration: 0.0
 num_conv_layers: 2
-num_epoch: 1
+num_epoch: 10
 num_iter_print: 100
 num_rnn_layers: 3
 num_samples: 120000
@@ -27,10 +27,33 @@ use_sortagrad: 1
 vocab_path: data/aishell/vocab.txt
 ------------------------------------------------
 finish initing model from pretrained params from ./checkpoints/aishell/step_final
+epoch: 0, batch: 0, train loss: 0.008762
+
+epoch: 0, batch: 100, train loss: 1.098050
+
+epoch: 0, batch: 200, train loss: 1.556043
+
+epoch: 0, batch: 300, train loss: 0.618263
+
+epoch: 0, batch: 400, train loss: 4.734206
+
+epoch: 0, batch: 500, train loss: 1.843673
+
+epoch: 0, batch: 600, train loss: 6.221780
+
+epoch: 0, batch: 700, train loss: 7.692776
+
+epoch: 0, batch: 800, train loss: 4.872285
+
+epoch: 0, batch: 900, train loss: 5.619292
+
 
 ----------Begin test...
---------Time: 19.941976 sec, epoch: 1, train loss: nan, test loss: nan
+--------Time: 1156.136735 sec, epoch: 1, train loss: 3.426513, test loss: 10.900992
 save parameters at ./checkpoints/aishell/epoch_1
-save parameters at ./checkpoints/aishell/step_final
+epoch: 1, batch: 0, train loss: 6.116293
 
-------------Training finished!!!-------------
+epoch: 1, batch: 100, train loss: 1.242309
+
+epoch: 1, batch: 200, train loss: 0.727081
+
