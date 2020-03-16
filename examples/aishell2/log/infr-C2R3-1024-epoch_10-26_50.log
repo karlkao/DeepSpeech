@@ -1,0 +1,924 @@
+-----------  Configuration Arguments -----------
+alpha: 2.6
+beam_size: 300
+beta: 5.0
+cutoff_prob: 0.99
+cutoff_top_n: 40
+decoding_method: ctc_beam_search
+error_rate_type: cer
+infer_manifest: data/Wang/16k/manifest.dev
+lang_model_path: models/lm/zhidao_giga.klm
+mean_std_path: data/aishell2/mean_std.npz
+model_path: checkpoints/aishell2/step_final
+num_conv_layers: 2
+num_proc_bsearch: 8
+num_rnn_layers: 3
+num_samples: 226
+rnn_layer_size: 1024
+share_rnn_weights: 0
+specgram_type: linear
+use_gpu: 1
+use_gru: 1
+vocab_path: data/aishell2/vocab.txt
+------------------------------------------------
+finish initing model from pretrained params from checkpoints/aishell2/step_final
+
+Target Transcription: 各位亲爱的弟兄姐妹大家好从今天呃这一讲开始我们会连着
+Output Transcription: 更是前一个地区准备大家好从今天的这讲开始我们会连折
+Current error rate [cer] = 0.461538
+
+Target Transcription: 呃有四十讲来讲出埃及记
+Output Transcription: 而有四家来讲初开之际
+Current error rate [cer] = 0.636364
+
+Target Transcription: 出埃及记是整本我们的圣经的第二卷
+Output Transcription: 除了机器是成本我们的圣经的第二卷
+Current error rate [cer] = 0.312500
+
+Target Transcription: 是非常重要的一卷
+Output Transcription: 是非常重要的一卷
+Current error rate [cer] = 0.000000
+
+Target Transcription: 当我们讲到呃头一卷也就是第一卷创世纪的时候我们曾经啊讲过他的主题思想
+Output Transcription: 当我们讲到了头一圈也就是第一圈创世纪的时候我们曾经讲过他的主题事项
+Current error rate [cer] = 0.176471
+
+Target Transcription: 我们说在创世纪当中呢是
+Output Transcription: 我们是在创世纪当中的死
+Current error rate [cer] = 0.272727
+
+Target Transcription: 讲到神伟大的主权
+Output Transcription: 讲到神鬼道的主权
+Current error rate [cer] = 0.250000
+
+Target Transcription: 还有呢就是讲明了宇宙外有
+Output Transcription: 还有呢就是讲明了宇宙怪物
+Current error rate [cer] = 0.166667
+
+Target Transcription: 天地人类社会各个方面的一些事物的来历
+Output Transcription: 天地人类社会各个方面的一些事物的来历
+Current error rate [cer] = 0.000000
+
+Target Transcription: 那么呢从
+Output Transcription: 那么的重
+Current error rate [cer] = 0.500000
+
+Target Transcription: 来历到神的主权
+Output Transcription: 来利宝上的主权
+Current error rate [cer] = 0.428571
+
+Target Transcription: 从这两个角度当你在读创世纪的时候
+Output Transcription: 从这两个角度当你在读创世纪的时候
+Current error rate [cer] = 0.000000
+
+Target Transcription: 我们说你就可以啊
+Output Transcription: 我们说你就可以要
+Current error rate [cer] = 0.125000
+
+Target Transcription: 哦得到非常美好的开启
+Output Transcription: 要得到非常美好的开启
+Current error rate [cer] = 0.100000
+
+Target Transcription: 就可以屡出一条真理的线络
+Output Transcription: 就可以理出一条真实的陷落
+Current error rate [cer] = 0.333333
+
+Target Transcription: 呃读的时候呢就比较清晰
+Output Transcription: 而读的生活的就比较清晰
+Current error rate [cer] = 0.363636
+
+Target Transcription: 那当我们在读出埃及记的时候
+Output Transcription: 那当我们在读出一集剧的时候
+Current error rate [cer] = 0.230769
+
+Target Transcription: 我们也会按照像读创世纪一样
+Output Transcription: 我们也会按照消毒创世纪一样
+Current error rate [cer] = 0.153846
+
+Target Transcription: 我们将会对每一章
+Output Transcription: 我们将会对每一章
+Current error rate [cer] = 0.000000
+
+Target Transcription: 啊它的分段还有他的一些重要情节
+Output Transcription: 他的分段还有他的一些重要情节
+Current error rate [cer] = 0.133333
+
+Target Transcription: 啊都会进行一点分析和描述
+Output Transcription: 他都会进行一点分析和描述
+Current error rate [cer] = 0.083333
+
+Target Transcription: 呃理清楚一些细节的他的次序
+Output Transcription: 李清出一些细节他的次序
+Current error rate [cer] = 0.307692
+
+Target Transcription: 那么再有呢我们会啊也会顺便讲到一些
+Output Transcription: 那么再有呢我们会也会顺便讲了一些
+Current error rate [cer] = 0.117647
+
+Target Transcription: 有时候难以理解的一些重要词汇
+Output Transcription: 有时我难以理解的一些重要词汇
+Current error rate [cer] = 0.071429
+
+Target Transcription: 还有呢在这一章当中啊
+Output Transcription: 还有那在这一张当中了
+Current error rate [cer] = 0.300000
+
+Target Transcription: 啊有些真理的要义它究竟是什么
+Output Transcription: 而有些真理的要义它就正是
+Current error rate [cer] = 0.357143
+
+Target Transcription: 那么另外呢我们也会
+Output Transcription: 那么另外的我们也
+Current error rate [cer] = 0.222222
+
+Target Transcription: 谈到关于啊
+Output Transcription: 谈到关于家
+Current error rate [cer] = 0.200000
+
+Target Transcription: 呃就是一章古老的经文
+Output Transcription: 那就是一张古老的京文
+Current error rate [cer] = 0.300000
+
+Target Transcription: 在今天神的儿女的生命当中将会起到怎样的应用的作用
+Output Transcription: 在今天神的儿女的伤病当中将会起到怎样的应用的作用
+Current error rate [cer] = 0.083333
+
+Target Transcription: 那于创世纪呃不同的呢
+Output Transcription: 那与传世纪的不同的呢
+Current error rate [cer] = 0.300000
+
+Target Transcription: 就是我们将会
+Output Transcription: 就是我们将会
+Current error rate [cer] = 0.000000
+
+Target Transcription: 呃增加一个
+Output Transcription: 中教一
+Current error rate [cer] = 0.800000
+
+Target Transcription: 啊一个环节
+Output Transcription: 把一个环节
+Current error rate [cer] = 0.200000
+
+Target Transcription: 就是由我来特别的跟你们选一节
+Output Transcription: 这是由我来特别这里的血一劫
+Current error rate [cer] = 0.500000
+
+Target Transcription: 这一章当中的钥句
+Output Transcription: 这一张办公的药据
+Current error rate [cer] = 0.625000
+
+Target Transcription: 那么大家呢就可以结合这个钥句呢来看
+Output Transcription: 那么大家的就可以结合这个药用了来看
+Current error rate [cer] = 0.235294
+
+Target Transcription: 啊整一章的圣经
+Output Transcription: 把整体长的圣经
+Current error rate [cer] = 0.428571
+
+Target Transcription: 因为这个钥句呢得要是钥匙的钥通常在一章圣经当中
+Output Transcription: 因为这个药具的钥匙钥匙的药通常在一场盛传当中
+Current error rate [cer] = 0.434783
+
+Target Transcription: 有一节圣经
+Output Transcription: 有一节圣经
+Current error rate [cer] = 0.000000
+
+Target Transcription: 就像钥匙一样
+Output Transcription: 就像钥匙一样
+Current error rate [cer] = 0.000000
+
+Target Transcription: 能为我们开启
+Output Transcription: 能为我们开启
+Current error rate [cer] = 0.000000
+
+Target Transcription: 整章圣经啊他的真理
+Output Transcription: 整张圣经他的真理
+Current error rate [cer] = 0.222222
+
+Target Transcription: 那如果创世纪他的书中的主题是论道神伟大的主权还有是论道一切的开始
+Output Transcription: 那如果创世纪他的书中的主题是论到神伟大的主权还有事论到一切的开始
+Current error rate [cer] = 0.093750
+
+Target Transcription: 那当你读到出埃及记的时候我们说它的主题思想将是什么呢
+Output Transcription: 那么当你读到出机器的时候我们说他的主题思想是什么呢
+Current error rate [cer] = 0.230769
+
+Target Transcription: 那出埃及记啊
+Output Transcription: 可除AGGR
+Current error rate [cer] = 1.000000
+
+Target Transcription: 我们说它的主题思想呢
+Output Transcription: 我们说它的主题思想的
+Current error rate [cer] = 0.100000
+
+Target Transcription: 是论道神伟大救赎的工作
+Output Transcription: 神论到神伟大救赎的工作
+Current error rate [cer] = 0.181818
+
+Target Transcription: 神伟大救赎的工作
+Output Transcription: 神伟大救赎的工作
+Current error rate [cer] = 0.000000
+
+Target Transcription: 你在出埃及记当中
+Output Transcription: 你在初级系统中
+Current error rate [cer] = 0.625000
+
+Target Transcription: 将会看见神极其荣耀的那个工作的那个方式
+Output Transcription: 将会看见省及其荣耀地工作的方式
+Current error rate [cer] = 0.368421
+
+Target Transcription: 而且如果你跟
+Output Transcription: 而且如果你跟
+Current error rate [cer] = 0.000000
+
+Target Transcription: 创世纪对比的话
+Output Transcription: 创世纪将对比的话
+Current error rate [cer] = 0.142857
+
+Target Transcription: 呃会令你特别的敬畏
+Output Transcription: 而会议特别的机会
+Current error rate [cer] = 0.555556
+
+Target Transcription: 啊惊奇啊惊讶
+Output Transcription: 而惊奇的金价
+Current error rate [cer] = 0.666667
+
+Target Transcription: 神是非常奇妙用荣耀的可以说是超然的入侵到
+Output Transcription: 但是非常奇妙用荣耀地可以说是超人的入侵的
+Current error rate [cer] = 0.200000
+
+Target Transcription: 呃我们使用一个词叫入侵或者进入人类历史的时空当中
+Output Transcription: 我们使用一个此就入侵或者进入人类律师的失控当中
+Current error rate [cer] = 0.291667
+
+Target Transcription: 来展现出他伟大的救赎的工作
+Output Transcription: 来展现出跑不到的救赎的工作
+Current error rate [cer] = 0.230769
+
+Target Transcription: 他救赎谁呢
+Output Transcription: 他们救出水了
+Current error rate [cer] = 0.800000
+
+Target Transcription: 他要救赎亚伯拉罕以撒雅各的后裔
+Output Transcription: 他救赎的韩以桑雅各的后裔
+Current error rate [cer] = 0.400000
+
+Target Transcription: 那么呢在
+Output Transcription: 能不能在
+Current error rate [cer] = 0.750000
+
+Target Transcription: 出埃及记啊
+Output Transcription: 如LGG
+Current error rate [cer] = 1.000000
+
+Target Transcription: 呃这本书
+Output Transcription: 而这个书
+Current error rate [cer] = 0.500000
+
+Target Transcription: 他在最
+Output Transcription: 他们在最
+Current error rate [cer] = 0.333333
+
+Target Transcription: 最开始在以色列人当中被抄入的时候呢
+Output Transcription: 最开始在以四个人当中被超过的生活的
+Current error rate [cer] = 0.411765
+
+Target Transcription: 原来出埃及记和原来的创世纪呢其实都有一个情况
+Output Transcription: 原来除而机器可以原来的创世纪的汽车都有一个情况
+Current error rate [cer] = 0.409091
+
+Target Transcription: 那就是
+Output Transcription: 那就是
+Current error rate [cer] = 0.000000
+
+Target Transcription: 他们的原来的卷名呢不像今天这样
+Output Transcription: 他们的原来的证明不像今天这样
+Current error rate [cer] = 0.200000
+
+Target Transcription: 叫创世纪叫出埃及记
+Output Transcription: 在创世纪交出IGG
+Current error rate [cer] = 0.555556
+
+Target Transcription: 由于古代以色列人呢他们是用羊皮纸卷用卷轴的方式
+Output Transcription: 由于古代以色利人的他们是用羊皮纸卷用卷轴的方式
+Current error rate [cer] = 0.086957
+
+Target Transcription: 来抄写圣经
+Output Transcription: 来抄写圣经
+Current error rate [cer] = 0.000000
+
+Target Transcription: 而希伯来文呢是从右往左来读的
+Output Transcription: 而西布莱文的是从右往左来读的
+Current error rate [cer] = 0.285714
+
+Target Transcription: 是横着来哎来书写的
+Output Transcription: 航展而来书写的
+Current error rate [cer] = 0.555556
+
+Target Transcription: 所以每当啊古代的他们的
+Output Transcription: 最美妈妈古代的他们得
+Current error rate [cer] = 0.545455
+
+Target Transcription: 羊皮纸卷他们圣经的书卷一旦被展开的时候呢
+Output Transcription: 羊皮纸他们圣经的书卷一旦被展开的时候了
+Current error rate [cer] = 0.100000
+
+Target Transcription: 他们要从右往左读
+Output Transcription: 他们要从右往左读
+Current error rate [cer] = 0.000000
+
+Target Transcription: 那么呢
+Output Transcription: 那么能
+Current error rate [cer] = 0.333333
+
+Target Transcription: 往往就在一卷书它的第一章第一节的第一个字
+Output Transcription: 往往就在一传书他的第一张第一节的第一个字
+Current error rate [cer] = 0.150000
+
+Target Transcription: 就会作为啊这卷书他的名字
+Output Transcription: 就会作为的这个书他的名字
+Current error rate [cer] = 0.166667
+
+Target Transcription: 那其实呢呃当在创世纪当中你就可以读到啊他的名字
+Output Transcription: 那气势当在创新系统中你可以读到他的名字
+Current error rate [cer] = 0.391304
+
+Target Transcription: 呃就使用的是呃我们今天使用创世纪
+Output Transcription: 那就使用的是啊我们今天使用创世纪
+Current error rate [cer] = 0.125000
+
+Target Transcription: 可是呢在以色列人原来呀他们用的名字其实不叫创世纪
+Output Transcription: 可是在一次人员来料他们用的名确实不叫创世纪
+Current error rate [cer] = 0.333333
+
+Target Transcription: 而是叫起初
+Output Transcription: 二是就提出
+Current error rate [cer] = 0.800000
+
+Target Transcription: 为什么呢因为希伯来文哪他的第一个
+Output Transcription: 为什么因为细胞来我跑到第一个
+Current error rate [cer] = 0.437500
+
+Target Transcription: 字的排列就是起初神创造天地的起初
+Output Transcription: 自己的排列就是起初神创造天地的提出
+Current error rate [cer] = 0.250000
+
+Target Transcription: 希伯来文呢叫布希府
+Output Transcription: 细胞来文的角度
+Current error rate [cer] = 0.777778
+
+Target Transcription: 布希府那么因此呢？起初这个词啊就是创世纪的名字
+Output Transcription: 不是他不因此呢提出这个词就是创世纪的名字
+Current error rate [cer] = 0.391304
+
+Target Transcription: 那等到
+Output Transcription: 那等斗
+Current error rate [cer] = 0.333333
+
+Target Transcription: 呃出埃及记呢出埃及记的名字呢
+Output Transcription: 把出AGG的出IGG的名字呢
+Current error rate [cer] = 0.571429
+
+Target Transcription: 啊原来他的卷名不叫出埃及记
+Output Transcription: 原来他们证明不交出来DG
+Current error rate [cer] = 0.615385
+
+Target Transcription: 而是
+Output Transcription: 二市
+Current error rate [cer] = 1.000000
+
+Target Transcription: 像出埃及记的一章
+Output Transcription: 像出来机第一章
+Current error rate [cer] = 0.500000
+
+Target Transcription: 呃第一节所讲的
+Output Transcription: 第一节所讲的
+Current error rate [cer] = 0.142857
+
+Target Transcription: 作为希伯来文他的文法呃句式的排列
+Output Transcription: 作为希波莱稳他的违法了去似的排列
+Current error rate [cer] = 0.437500
+
+Target Transcription: 就是呢
+Output Transcription: 那就是呢
+Current error rate [cer] = 0.333333
+
+Target Transcription: 这些名字
+Output Transcription: 住了些名字
+Current error rate [cer] = 0.500000
+
+Target Transcription: 这些名字
+Output Transcription: 这些名字
+Current error rate [cer] = 0.000000
+
+Target Transcription: 的希伯来文词汇呢排在呃最先
+Output Transcription: 而西部的文字会排在最先
+Current error rate [cer] = 0.615385
+
+Target Transcription: 那么呢
+Output Transcription: 那么能
+Current error rate [cer] = 0.333333
+
+Target Transcription: 呃这些名字就成为原来出埃及记的他的卷名
+Output Transcription: 而这些名字就成为原来初IDG的他的罪名
+Current error rate [cer] = 0.315789
+
+Target Transcription: 那如果我们看创世纪呢如果原来叫起初我们还能知道这卷书它的要义和中心思想
+Output Transcription: 那如果我们看创世纪的如果原来就起初我们还能知道解决说它的有义和中心思想
+Current error rate [cer] = 0.171429
+
+Target Transcription: 他是论道一切的起源嘛
+Output Transcription: 他说论到一切的起源吗
+Current error rate [cer] = 0.300000
+
+Target Transcription: 无论是属世的无论是属灵的
+Output Transcription: 无论是从事的无论是属灵的
+Current error rate [cer] = 0.166667
+
+Target Transcription: 还有这个都合理
+Output Transcription: 还有这个多合理
+Current error rate [cer] = 0.142857
+
+Target Transcription: 可是如果要是像出埃及记这样
+Output Transcription: 科学如果要是想出外机器这样
+Current error rate [cer] = 0.461538
+
+Target Transcription: 啊叫做这些名字
+Output Transcription: 而叫做这些名字
+Current error rate [cer] = 0.142857
+
+Target Transcription: 那么呢就显然呢呃很容易让人呢理解说这卷书是不是啊在讲啊非常长的复杂的家谱
+Output Transcription: 那么就显然道啊很容易让人的理解说这卷书是不是在讲到非常长的复杂的脚步
+Current error rate [cer] = 0.222222
+
+Target Transcription: 其实不是
+Output Transcription: 这就是不是
+Current error rate [cer] = 0.750000
+
+Target Transcription: 我们在第一章的前头呢有提到
+Output Transcription: 我们在第一张的前头有提到
+Current error rate [cer] = 0.153846
+
+Target Transcription: 有看到
+Output Transcription: 有看到
+Current error rate [cer] = 0.000000
+
+Target Transcription: 关于雅各一家的啊他们家的名字
+Output Transcription: 关于雅各一家他们家的名字
+Current error rate [cer] = 0.142857
+
+Target Transcription: 说这些人呢要到埃及去
+Output Transcription: 但是这些人的想法IT区
+Current error rate [cer] = 0.800000
+
+Target Transcription: 但是其实
+Output Transcription: 但是汽车
+Current error rate [cer] = 0.500000
+
+Target Transcription: 出埃及记整卷书呢并不是家谱的书
+Output Transcription: 机器证券书的并不是加普的书
+Current error rate [cer] = 0.600000
+
+Target Transcription: 所以呢
+Output Transcription: 所以呢
+Current error rate [cer] = 0.000000
+
+Target Transcription: 卷名叫这些名字
+Output Transcription: 这名叫这些名字
+Current error rate [cer] = 0.142857
+
+Target Transcription: 显然呢就不够点题
+Output Transcription: 显然的就不够电梯
+Current error rate [cer] = 0.375000
+
+Target Transcription: 不够让我们能明白呀整卷书的要义
+Output Transcription: 不过让我们都明白了证券书的要义
+Current error rate [cer] = 0.333333
+
+Target Transcription: 那什么时候
+Output Transcription: 那什么时候
+Current error rate [cer] = 0.000000
+
+Target Transcription: 像创世纪还有出埃及记包括利未记民数记还有申命记被起为今天这样的一种形式了呢
+Output Transcription: 向创世纪还有出IDG包括利率部棉书记还有生命剂被其为今天这样的一种形式了呢
+Current error rate [cer] = 0.297297
+
+Target Transcription: 就是在主前三世纪的时候呢当时是地中海一带呀是希腊时期
+Output Transcription: 就是在主前三四季的生活呢当时是地中海一带是希望时期
+Current error rate [cer] = 0.230769
+
+Target Transcription: 希腊帝国呀掌管着地中海沿岸的一些国家那么当时呢
+Output Transcription: 希望帝国掌管着地中海沿岸的一些国家那么当时呢
+Current error rate [cer] = 0.086957
+
+Target Transcription: 以色列是被
+Output Transcription: 以色列是
+Current error rate [cer] = 0.200000
+
+Target Transcription: 在北非
+Output Transcription: 在北非
+Current error rate [cer] = 0.000000
+
+Target Transcription: 那边做王的一个希腊啊一个国
+Output Transcription: 那边做王的一个希望一个国
+Current error rate [cer] = 0.153846
+
+Target Transcription: 呃叫做托勒密王朝啊又旧又被翻译为多莉买王朝来
+Output Transcription: 而叫做托勒密王朝又就又被翻以为多利买王朝
+Current error rate [cer] = 0.272727
+
+Target Transcription: 啊掌管
+Output Transcription: 他掌管
+Current error rate [cer] = 0.333333
+
+Target Transcription: 那么呢在当时呢正是多莉买或者叫托勒密二世正在做呀那个希腊的王
+Output Transcription: 那么道在当时那正是多利买或者叫托罗蜜二是正在做那个希腊的王
+Current error rate [cer] = 0.233333
+
+Target Transcription: 那当时呢就有这样的一个故事发生
+Output Transcription: 在当时那就有这样的一个故事发生
+Current error rate [cer] = 0.133333
+
+Target Transcription: 在埃及北部地中海的一个沿岸城市叫做亚历山大
+Output Transcription: 在埃及北部对出海的一个闫安尝试叫做亚历山大
+Current error rate [cer] = 0.285714
+
+Target Transcription: 如果呢大家熟悉地理你就可以知道这个地方
+Output Transcription: 如果能大小熟悉地理你就可以知道这个地方
+Current error rate [cer] = 0.105263
+
+Target Transcription: 这个地方呢是埃及很漂亮的一个城市在古代的时候呢也是基督教世界
+Output Transcription: 这个地方的是ID很漂亮的一个城市在古代说候的也是基督教世界
+Current error rate [cer] = 0.200000
+
+Target Transcription: 五大教区其中一个
+Output Transcription: 五大教区其中一个
+Current error rate [cer] = 0.000000
+
+Target Transcription: 那么呢
+Output Transcription: 那么到
+Current error rate [cer] = 0.333333
+
+Target Transcription: 呃后来呢这个亚历山大的就被呃穆斯林呢给攻取
+Output Transcription: 而后来的这个压力上到的就给了穆斯林的给东去
+Current error rate [cer] = 0.523810
+
+Target Transcription: 所以呢呃基督教徒五大教区
+Output Transcription: 随着我国居住角度五大教区
+Current error rate [cer] = 0.666667
+
+Target Transcription: 最终只剩下罗马一个教区
+Output Transcription: 最终只剩下罗马一个教区
+Current error rate [cer] = 0.000000
+
+Target Transcription: 那在呃主前三世纪的时候呢
+Output Transcription: 那在铸圈三世纪的手候呢
+Current error rate [cer] = 0.333333
+
+Target Transcription: 当时在亚历山大呢就居住着大批的犹太人
+Output Transcription: 当时在亚历山大的就居住着大批的游客远
+Current error rate [cer] = 0.222222
+
+Target Transcription: 他们是什么时候去的呢据学者们考察呢就认为啊他们是在主前六世纪当南国犹大
+Output Transcription: 他们是什么时候取得的据学者们考察的就认为他们是在主前六世纪的南国游荡
+Current error rate [cer] = 0.228571
+
+Target Transcription: 被掳巴比伦的时候
+Output Transcription: 例如巴比伦的时候
+Current error rate [cer] = 0.250000
+
+Target Transcription: 大批的犹太人逃亡
+Output Transcription: 大RP的犹太人逃亡
+Current error rate [cer] = 0.250000
+
+Target Transcription: 就通过西乃半岛然后呢啊又北上啊
+Output Transcription: 就通过新的奔跑然后那儿又北上了
+Current error rate [cer] = 0.466667
+
+Target Transcription: 到了亚历山大还有埃及的很多地方我们如果读耶利米书书呢就知到，连耶利米后来都被人哪带到埃及去
+Output Transcription: 到了亚历山大还有埃剧的很多地方我们如果读一你说的就是的连一厘米后来都被人脑带到埃及去
+Current error rate [cer] = 0.288889
+
+Target Transcription: 那么到了主前三世纪呢就出现了一个情况
+Output Transcription: 那么到了主角的三世纪就出现了一个情况
+Current error rate [cer] = 0.166667
+
+Target Transcription: 就像我们今天的很多中国人的家庭的孩子到了美国啊到了加拿大到达澳大利亚到了西方
+Output Transcription: 就像我们今天的很多中国人的家庭的孩子到了美国来到了加拿大到了澳大利亚到了西方
+Current error rate [cer] = 0.052632
+
+Target Transcription: 那么呢，他们呢渐渐就不再会讲中国话了一样
+Output Transcription: 那么他们的渐渐就不再会奖中国画了一样
+Current error rate [cer] = 0.250000
+
+Target Transcription: 犹太人的历史当中呢也出现类似这个情况
+Output Transcription: 犹太人的历史当中文也出现类似这个情况
+Current error rate [cer] = 0.055556
+
+Target Transcription: 那在主前三世纪大批的犹太人的新生的一代呢说希腊话
+Output Transcription: 那在主权三世纪大批的犹太人的新生的一代说希望化
+Current error rate [cer] = 0.166667
+
+Target Transcription: 写希腊文
+Output Transcription: 谢希望文
+Current error rate [cer] = 0.500000
+
+Target Transcription: 不再会呀希伯来话希伯来文了
+Output Transcription: 我在胡杨西部兰花西不来了
+Current error rate [cer] = 0.846154
+
+Target Transcription: 所以当时的犹太拉比呢就非常的啊焦急他们就想这怎么办呢于是他们就想他报道一个很好的策略他们呢于是就派了人
+Output Transcription: 水当时的犹太拉比的就非常的交警他们就想着怎么巴的于是他们就想着报到一个很好的策略他们的于是就派了人
+Current error rate [cer] = 0.235294
+
+Target Transcription: 去请求
+Output Transcription: 他去请求
+Current error rate [cer] = 0.333333
+
+Target Transcription: 当时的
+Output Transcription: 当时歌
+Current error rate [cer] = 0.333333
+
+Target Transcription: 托罗密二世这个王
+Output Transcription: 随后托勒密二世这个王
+Current error rate [cer] = 0.375000
+
+Target Transcription: 跟他要求说能不能呃允许我们犹太人呐把我们希伯来文的圣经翻译成希腊文
+Output Transcription: 但他要求说能不能允许我们犹太人呢把我们西不来过的圣经翻译成希拉文
+Current error rate [cer] = 0.212121
+
+Target Transcription: 供年轻的一代呀希腊化的犹太人呢来使用，
+Output Transcription: 年轻的一代希腊化的犹太人来使用
+Current error rate [cer] = 0.210526
+
+Target Transcription: 那在当时啊亚历山大有一个全世界可以说最大的一个图书馆它的馆长
+Output Transcription: 而在当时的亚利上有一个全世界给说最大的一个突出过他的管长
+Current error rate [cer] = 0.400000
+
+Target Transcription: 也帮助犹太人讲话结果呢
+Output Transcription: 也帮助有田讲话结果的
+Current error rate [cer] = 0.363636
+
+Target Transcription: 托罗密二世呢就同意了
+Output Transcription: 托伦命二次的就同意了
+Current error rate [cer] = 0.400000
+
+Target Transcription: 于是呢犹太人就派人那就回到呃
+Output Transcription: 云上的犹太人就派人那就回到了
+Current error rate [cer] = 0.285714
+
+Target Transcription: 祖居地回到以色列就从以色列呢请来据说是七十二位
+Output Transcription: 组居力回到以色列就从以色列的请来据说是七十二位
+Current error rate [cer] = 0.130435
+
+Target Transcription: 呃拉比文士
+Output Transcription: 而拉比文士
+Current error rate [cer] = 0.200000
+
+Target Transcription: 那这群文士拉比啊非常的厉害他们的希伯来文不用说了
+Output Transcription: 那最穷文斯瓦比亚非一常的厉害他们的西伯来文不用说了
+Current error rate [cer] = 0.291667
+
+Target Transcription: 呃希腊文呢也不用讲了都是好的无比于是这七十二个人呢
+Output Transcription: 希瓦文的也不用讲的都是好的无比于是这七十二个人的
+Current error rate [cer] = 0.200000
+
+Target Transcription: 就到了亚历山大港以外在地中海当中很近的一个小岛这个小岛的名字呢叫法老岛在上面呢就进行啊希腊文圣经的这个翻译
+Output Transcription: 就到了亚历山大港以外在冰中海当着很近的一个小岛这个小岛的名字的叫法老道在上面的就进行了希腊文圣经中的这个翻译
+Current error rate [cer] = 0.132075
+
+Target Transcription: 据说呀他们就用了七十二天七十二人嘛就用了七十二天就把
+Output Transcription: 据说有他们就用了七十二天七少二人们就用了七胜二天就罢了
+Current error rate [cer] = 0.230769
+
+Target Transcription: 我们现在手头上的这个旧约圣经翻译成希腊文了
+Output Transcription: 我们现在手头上的这个旧约圣经翻译成希劳了
+Current error rate [cer] = 0.095238
+
+Target Transcription: 那其实呢真正哦那七十二位拉比所翻译的呢还不仅仅是我们旧约圣经的呃三十九卷
+Output Transcription: 而汽车的真正那汽车二维拉比所翻译的还不仅仅是我们旧约圣经的三十九卷
+Current error rate [cer] = 0.277778
+
+Target Transcription: 而是还包括了其他别的一些没有被放在我们旧约正典正当中的一些书卷
+Output Transcription: 二是还包括的其他比赛的一些没有被放在我们旧约正典到路的一些数据
+Current error rate [cer] = 0.290323
+
+Target Transcription: 那他们的工作呢非常的呃辛苦但是呢成效呢非常的卓著
+Output Transcription: 那他们的工作们非常的辛苦但上的长效非常的捉住
+Current error rate [cer] = 0.333333
+
+Target Transcription: 那么其中呢
+Output Transcription: 要其中的
+Current error rate [cer] = 0.600000
+
+Target Transcription: 这些
+Output Transcription: 最新
+Current error rate [cer] = 1.000000
+
+Target Transcription: 拉比们所做的一件非常有意义的一件事呢就是把呀希腊文的这个圣经的
+Output Transcription: 拉比们所做的一件非常容易的一件事就是把希腊文的有圣经的
+Current error rate [cer] = 0.225806
+
+Target Transcription: 呃圈名特别是摩西五经那么就改成现有的形式
+Output Transcription: 居民特别是摩西五金那么就改成现有的形式
+Current error rate [cer] = 0.200000
+
+Target Transcription: 当创世纪叫创世纪的时候就不再使用起初而使用的那个创世纪呢啊
+Output Transcription: 当创世纪就创世纪的时候就不再使用取出而使用的那个创世纪的
+Current error rate [cer] = 0.172414
+
+Target Transcription: 那么实际上用的那个名字是创世纪第二章当中的那个天地万物的来历
+Output Transcription: 那么实际场用的这个名字是创世纪第二章当中的那个天地万物的来历
+Current error rate [cer] = 0.066667
+
+Target Transcription: 本是这样那个来历那个字
+Output Transcription: 本是这样一个来历那个字
+Current error rate [cer] = 0.090909
+
+Target Transcription: 而不是第一章第一节的起初那个字
+Output Transcription: 而不是第一场第一节起初这个字
+Current error rate [cer] = 0.200000
+
+Target Transcription: 那当看到出埃及记的时候呢
+Output Transcription: 那当看到出AGG的手上的
+Current error rate [cer] = 0.500000
+
+Target Transcription: 那这些拉比们呢就给了
+Output Transcription: 那这小蜡笔们的就给了
+Current error rate [cer] = 0.400000
+
+Target Transcription: 呃这个这卷书呢不再叫这些名字而叫他呢
+Output Transcription: 这个传说了不再叫这些名字而叫他呢
+Current error rate [cer] = 0.277778
+
+Target Transcription: 离开或者出走那我们大家都不懂的呃希腊文我们也就在这里呢就不提了但是呢懂得英文的人呢就知道呢呃英文出埃及记的名称
+Output Transcription: 你开或者出走那我们大家都不懂得希文我们也就在这里的就不提到的是呢都得幽默的人脑就知道的而英文出机器的名称
+Current error rate [cer] = 0.290909
+
+Target Transcription: 就读为
+Output Transcription: 就读为
+Current error rate [cer] = 0.000000
+
+Target Transcription: Exodus
+Output Transcription: Pleases
+Current error rate [cer] = 1.000000
+
+Target Transcription: Exodus
+Output Transcription: Xtre
+Current error rate [cer] = 1.000000
+
+Target Transcription: 那这个英文的名字呢其实跟希腊文那个写法呢如果字母一换所呃一调换一相对这样一配
+Output Transcription: 那这个英文的名字的其实跟希腊文那个写法呢如果字母一换的一一一电话相对这一配
+Current error rate [cer] = 0.184211
+
+Target Transcription: 那么呢就就发现呢非常非常的接近因为希腊文后来的拉丁文后来的英文
+Output Transcription: 那么的祝福就放现了非常非常的接近因为希望文后来的拉丁文后来的英文
+Current error rate [cer] = 0.193548
+
+Target Transcription: 包括后来的中文他的意涵都是
+Output Transcription: 包括后来的中文他的义航都是
+Current error rate [cer] = 0.153846
+
+Target Transcription: 出走和离开的意思
+Output Transcription: 出走和离开的意思
+Current error rate [cer] = 0.000000
+
+Target Transcription: 那这个名字说起的啊我们说就非常的有领受然后有亮光
+Output Transcription: 那这一个名字说起的话我们说就非议常的游理售后有亮光
+Current error rate [cer] = 0.291667
+
+Target Transcription: 非常的好
+Output Transcription: 非常的好
+Current error rate [cer] = 0.000000
+
+Target Transcription: 那么就是这个Exodus这个出走和离开的这个词呢等到后来当路加写路加福音的时候在路加福音的第九章三十一节那他就使用了
+Output Transcription: 那么就是这个X的是这个出走和离开的这个词的等到后来当陆家写入教福音的时候在路家飞的第九五章三十一节那它就使用了
+Current error rate [cer] = 0.275862
+
+Target Transcription: 呃希腊文七十子译本因为七十二个人所翻译这个呃译本呢叫做七十子译本就使用了出埃及这个出走这个卷名这个字
+Output Transcription: 而希腊文西狮子一般因为其中个人所发译这个而日本的叫做七十子一本就使用了出埃及这个出走了个罪名这个字
+Current error rate [cer] = 0.300000
+
+Target Transcription: 那么呢
+Output Transcription: 那么能
+Current error rate [cer] = 0.333333
+
+Target Transcription: 呃在
+Output Transcription: 在一
+Current error rate [cer] = 1.000000
+
+Target Transcription: 路加福音的第九章啊啊实际上圣经当中有一段非常重要的就在描述啊啊耶稣基督呢带着彼得雅各约翰呢到变相山上就在荣耀的异象当中呢与摩西和以利亚说话
+Output Transcription: 陆佳音第九当晚身上送进大路有一段非常重要的就在描述我的叶数最多地带着彼得雅和约翰都变相山上就在荣耀的意象当中的与摩西和一例而说话
+Current error rate [cer] = 0.405797
+
+Target Transcription: 在马太福音呢记载这一这一段了
+Output Transcription: 在马太福音的计算是最多了
+Current error rate [cer] = 0.571429
+
+Target Transcription: 这个情节了马可福音呢啊也有描述只不过呢我们会看见那路加福音所讲述的最为有意思
+Output Transcription: 这个情节马可福音的啊也有描述只不过我们会看见了路加福应所讲述的最为有意思
+Current error rate [cer] = 0.131579
+
+Target Transcription: 因为呢路加在描述的时候
+Output Transcription: 因为那家在描述的收获
+Current error rate [cer] = 0.454545
+
+Target Transcription: 据说路加的材料呢是来自于彼得的叙述
+Output Transcription: 据说入交的材料能是来自于彼得的迅速
+Current error rate [cer] = 0.294118
+
+Target Transcription: 彼得的全传授那么呢彼得就在看到异象的情况下呢就听到了
+Output Transcription: 彼得全传授那么的比格就在看到异乡的情况下的就听到了
+Current error rate [cer] = 0.230769
+
+Target Transcription: 呃耶稣
+Output Transcription: 而耶稣
+Current error rate [cer] = 0.333333
+
+Target Transcription: 正在跟
+Output Transcription: 正凯歌
+Current error rate [cer] = 0.666667
+
+Target Transcription: 摩西和以利亚谈一件事情谈什么呢中文圣经在谈呢说谈耶稣啊去世的事儿
+Output Transcription: 摩西和以利亚他一件事情什么的中文圣经在谈的说谈耶稣去世的事
+Current error rate [cer] = 0.187500
+
+Target Transcription: 耶稣去世的事儿但是其实呢在希伯来文在希腊为原文对不起在希腊原文
+Output Transcription: 耶稣去世的但是其实的在西部莱文在新老的原文对不起在希腊文中文
+Current error rate [cer] = 0.354839
+
+Target Transcription: 圣将上市讲三个人在讲耶稣出走和离开的事儿
+Output Transcription: 上就上市的视角三个人在讲耶稣出走和离开的事
+Current error rate [cer] = 0.300000
+
+Target Transcription: 哎
+Output Transcription: 
+Current error rate [cer] = 1.000000
+
+Target Transcription: 这是非常稀奇的那去世跟出走离开
+Output Transcription: 这是非常细奇那去世跟出走离开
+Current error rate [cer] = 0.133333
+
+Target Transcription: 有什么区别呢
+Output Transcription: 有什么区别呢
+Current error rate [cer] = 0.000000
+
+Target Transcription: 老弟兄姐妹如果我们接下去读了整卷的出埃及记你就知道了
+Output Transcription: 拿地就姐妹如果我们接下去读了整转的出机器你就知道了
+Current error rate [cer] = 0.269231
+
+Target Transcription: 那出走和离开跟去世讲到耶稣的那个悲悲惨惨惨惨然后在十架上的那种流血的死它的味道是不完全一样的
+Output Transcription: 那出走和离开跟去世讲到耶稣的那个北奔财产参产然后在架上的那种流血的死他的味道是不完全一样的
+Current error rate [cer] = 0.173913
+
+Target Transcription: 发现了吗
+Output Transcription: 发现了吗
+Current error rate [cer] = 0.000000
+
+Target Transcription: 为什么因为在出埃及记当中告诉我们神让他的仆人摩西荣耀的得胜的从埃及的啊
+Output Transcription: 为什么因为在除埃基金当中告诉我们谁让他的普着摩西荣耀的德胜的从埃及地区
+Current error rate [cer] = 0.257143
+
+Target Transcription: 带着两三百万人口啊
+Output Transcription: 带着两三百万人渴望
+Current error rate [cer] = 0.222222
+
+Target Transcription: 啊同胞啊就离开离开法老的辖制
+Output Transcription: 把同保管就离开离开法国的小镇
+Current error rate [cer] = 0.428571
+
+Target Transcription: 那么实际上呢在新约的真理当中呢也让我们看见神的儿子主耶稣
+Output Transcription: 那个实际上的在新月的这当中也让我们看见神的儿子主角出
+Current error rate [cer] = 0.285714
+
+Target Transcription: 我们新约的摩西啊属灵的摩西也是代表带领着千千万万数不过来的会众
+Output Transcription: 我们新约的摩西树林的摩西也是代表带领的千千万万数不过来的汇众
+Current error rate [cer] = 0.161290
+
+Target Transcription: 离开世界的王法老就是恶者的辖制
+Output Transcription: 离开世界的王法老就是恶者的相对
+Current error rate [cer] = 0.133333
+
+Target Transcription: 所以啊
+Output Transcription: 虽然
+Current error rate [cer] = 1.000000
+
+Target Transcription: 如果把九章路加福音九章三十一节那里的呃用字哦
+Output Transcription: 如果把九章路交九张赛事一节里的用字
+Current error rate [cer] = 0.409091
+
+Target Transcription: 仅仅解释为去世来形容耶稣的死
+Output Transcription: 仅仅解释为去势来形容约束的时
+Current error rate [cer] = 0.285714
+
+Target Transcription: 而没有强调耶稣
+Output Transcription: 而没有强调耶书
+Current error rate [cer] = 0.142857
+
+Target Transcription: 借着他的死败坏掌死权的就是魔鬼而且把神的众名从死亡黑暗的权势当中带出来没有把这个意味把它讲出来或者中文把它翻出来的话呢我们就仍然会发现呢这就是翻译上的有限呃翻译上的局限因此我们就说呢呃用去世呃不如呢出走和离开
+Output Transcription: 借着托斯和败坏张斯全权的就是魔鬼而是八神的证明从死亡黑暗的全食当中带出来没有把这个意味把它讲出来我的中文版他翻出来的话我们就仍然会发现的这就是翻译上的有限而发育上的局限因此我们就说了又去世了不如的出走和离开
+Current error rate [cer] = 0.250000
+
+Target Transcription: 所以呢愿大家在这里呢明白这个解释的重要
+Output Transcription: 随着愿大家在这里的明白这个记事的重要
+Current error rate [cer] = 0.315789

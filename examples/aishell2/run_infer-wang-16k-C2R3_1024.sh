@@ -20,8 +20,8 @@ python -u infer.py \
 --num_conv_layers=2 \
 --num_rnn_layers=3 \
 --rnn_layer_size=1024 \
---alpha=2.6 \
---beta=5.0 \
+--alpha=2.105 \
+--beta=4.211 \
 --cutoff_prob=0.99 \
 --cutoff_top_n=40 \
 --use_gru=True \
@@ -30,7 +30,7 @@ python -u infer.py \
 --infer_manifest='data/Wang/16k/manifest.dev' \
 --mean_std_path='data/aishell2/mean_std.npz' \
 --vocab_path='data/aishell2/vocab.txt' \
---model_path='checkpoints/aishell2/step_final' \
+--model_path='checkpoints/aishell2-C2R31024/step_final' \
 --lang_model_path='models/lm/zhidao_giga.klm' \
 --decoding_method='ctc_beam_search' \
 --error_rate_type='cer' \
