@@ -3,7 +3,7 @@
 cd ../.. > /dev/null
 
 # grid-search for hyper-parameters in language model
-CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 \
+CUDA_VISIBLE_DEVICES=0,1,2,4,5,6,7,8,9,10,11,12,13,14,15 \
 python -u tools/tune.py \
 --num_batches=-1 \
 --batch_size=256 \
@@ -26,7 +26,7 @@ python -u tools/tune.py \
 --tune_manifest='data/Wang/16k/manifest.dev' \
 --mean_std_path='data/aishell2/mean_std.npz' \
 --vocab_path='data/aishell2/vocab.txt' \
---model_path='checkpoints/aishell2/step_final' \
+--model_path='checkpoints/aishell2-C2R31024/step_final' \
 --lang_model_path='models/lm/zhidao_giga.klm' \
 --error_rate_type='cer' \
 --specgram_type='linear'
