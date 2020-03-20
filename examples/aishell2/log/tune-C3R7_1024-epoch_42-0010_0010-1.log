@@ -1,0 +1,136 @@
+-----------  Configuration Arguments -----------
+alpha_from: 2.0
+alpha_to: 4.0
+batch_size: 256
+beam_size: 500
+beta_from: 0.0
+beta_to: 10.0
+cutoff_prob: 1.0
+cutoff_top_n: 40
+error_rate_type: cer
+lang_model_path: models/lm/zhidao_giga.klm
+mean_std_path: data/aishell2/mean_std.npz
+model_path: checkpoints/aishell2-C3R71024/step_final
+num_alphas: 10
+num_batches: -1
+num_betas: 10
+num_conv_layers: 3
+num_proc_bsearch: 12
+num_rnn_layers: 7
+rnn_layer_size: 1024
+share_rnn_weights: 0
+specgram_type: linear
+trainer_count: 8
+tune_manifest: data/Wang/16k/manifest.dev
+use_gpu: 1
+use_gru: 1
+vocab_path: data/aishell2/vocab.txt
+------------------------------------------------
+finish initing model from pretrained params from checkpoints/aishell2-C3R71024/step_final
+..................................................
+Batch 0 [225/?], current opt (alpha, beta) = (2.667, 4.444),  min [cer] = 0.281915
+
+Final cer:
+
+(alpha, beta) = (2.000, 0.000), [cer] = 0.303191
+(alpha, beta) = (2.000, 1.111), [cer] = 0.297032
+(alpha, beta) = (2.000, 2.222), [cer] = 0.291713
+(alpha, beta) = (2.000, 3.333), [cer] = 0.288634
+(alpha, beta) = (2.000, 4.444), [cer] = 0.288634
+(alpha, beta) = (2.000, 5.556), [cer] = 0.290873
+(alpha, beta) = (2.000, 6.667), [cer] = 0.296193
+(alpha, beta) = (2.000, 7.778), [cer] = 0.302632
+(alpha, beta) = (2.000, 8.889), [cer] = 0.316629
+(alpha, beta) = (2.000, 10.000), [cer] = 0.336226
+(alpha, beta) = (2.222, 0.000), [cer] = 0.305431
+(alpha, beta) = (2.222, 1.111), [cer] = 0.299272
+(alpha, beta) = (2.222, 2.222), [cer] = 0.291993
+(alpha, beta) = (2.222, 3.333), [cer] = 0.285834
+(alpha, beta) = (2.222, 4.444), [cer] = 0.288634
+(alpha, beta) = (2.222, 5.556), [cer] = 0.289754
+(alpha, beta) = (2.222, 6.667), [cer] = 0.294233
+(alpha, beta) = (2.222, 7.778), [cer] = 0.301792
+(alpha, beta) = (2.222, 8.889), [cer] = 0.309630
+(alpha, beta) = (2.222, 10.000), [cer] = 0.328947
+(alpha, beta) = (2.444, 0.000), [cer] = 0.307111
+(alpha, beta) = (2.444, 1.111), [cer] = 0.298432
+(alpha, beta) = (2.444, 2.222), [cer] = 0.291433
+(alpha, beta) = (2.444, 3.333), [cer] = 0.285274
+(alpha, beta) = (2.444, 4.444), [cer] = 0.284155
+(alpha, beta) = (2.444, 5.556), [cer] = 0.288354
+(alpha, beta) = (2.444, 6.667), [cer] = 0.290314
+(alpha, beta) = (2.444, 7.778), [cer] = 0.298432
+(alpha, beta) = (2.444, 8.889), [cer] = 0.309351
+(alpha, beta) = (2.444, 10.000), [cer] = 0.324188
+(alpha, beta) = (2.667, 0.000), [cer] = 0.310470
+(alpha, beta) = (2.667, 1.111), [cer] = 0.299272
+(alpha, beta) = (2.667, 2.222), [cer] = 0.295633
+(alpha, beta) = (2.667, 3.333), [cer] = 0.288074
+(alpha, beta) = (2.667, 4.444), [cer] = 0.281915
+(alpha, beta) = (2.667, 5.556), [cer] = 0.284994
+(alpha, beta) = (2.667, 6.667), [cer] = 0.291433
+(alpha, beta) = (2.667, 7.778), [cer] = 0.297032
+(alpha, beta) = (2.667, 8.889), [cer] = 0.309071
+(alpha, beta) = (2.667, 10.000), [cer] = 0.323628
+(alpha, beta) = (2.889, 0.000), [cer] = 0.313270
+(alpha, beta) = (2.889, 1.111), [cer] = 0.301512
+(alpha, beta) = (2.889, 2.222), [cer] = 0.296193
+(alpha, beta) = (2.889, 3.333), [cer] = 0.290034
+(alpha, beta) = (2.889, 4.444), [cer] = 0.287234
+(alpha, beta) = (2.889, 5.556), [cer] = 0.284434
+(alpha, beta) = (2.889, 6.667), [cer] = 0.290034
+(alpha, beta) = (2.889, 7.778), [cer] = 0.293673
+(alpha, beta) = (2.889, 8.889), [cer] = 0.307111
+(alpha, beta) = (2.889, 10.000), [cer] = 0.319709
+(alpha, beta) = (3.111, 0.000), [cer] = 0.321109
+(alpha, beta) = (3.111, 1.111), [cer] = 0.309630
+(alpha, beta) = (3.111, 2.222), [cer] = 0.299552
+(alpha, beta) = (3.111, 3.333), [cer] = 0.293953
+(alpha, beta) = (3.111, 4.444), [cer] = 0.290314
+(alpha, beta) = (3.111, 5.556), [cer] = 0.288074
+(alpha, beta) = (3.111, 6.667), [cer] = 0.290873
+(alpha, beta) = (3.111, 7.778), [cer] = 0.295633
+(alpha, beta) = (3.111, 8.889), [cer] = 0.305151
+(alpha, beta) = (3.111, 10.000), [cer] = 0.315789
+(alpha, beta) = (3.333, 0.000), [cer] = 0.325588
+(alpha, beta) = (3.333, 1.111), [cer] = 0.313270
+(alpha, beta) = (3.333, 2.222), [cer] = 0.300112
+(alpha, beta) = (3.333, 3.333), [cer] = 0.293953
+(alpha, beta) = (3.333, 4.444), [cer] = 0.288914
+(alpha, beta) = (3.333, 5.556), [cer] = 0.290034
+(alpha, beta) = (3.333, 6.667), [cer] = 0.290873
+(alpha, beta) = (3.333, 7.778), [cer] = 0.293953
+(alpha, beta) = (3.333, 8.889), [cer] = 0.303191
+(alpha, beta) = (3.333, 10.000), [cer] = 0.313270
+(alpha, beta) = (3.556, 0.000), [cer] = 0.334267
+(alpha, beta) = (3.556, 1.111), [cer] = 0.316629
+(alpha, beta) = (3.556, 2.222), [cer] = 0.307951
+(alpha, beta) = (3.556, 3.333), [cer] = 0.298152
+(alpha, beta) = (3.556, 4.444), [cer] = 0.290873
+(alpha, beta) = (3.556, 5.556), [cer] = 0.291993
+(alpha, beta) = (3.556, 6.667), [cer] = 0.292553
+(alpha, beta) = (3.556, 7.778), [cer] = 0.295633
+(alpha, beta) = (3.556, 8.889), [cer] = 0.304311
+(alpha, beta) = (3.556, 10.000), [cer] = 0.314390
+(alpha, beta) = (3.778, 0.000), [cer] = 0.341545
+(alpha, beta) = (3.778, 1.111), [cer] = 0.324748
+(alpha, beta) = (3.778, 2.222), [cer] = 0.311030
+(alpha, beta) = (3.778, 3.333), [cer] = 0.304031
+(alpha, beta) = (3.778, 4.444), [cer] = 0.294233
+(alpha, beta) = (3.778, 5.556), [cer] = 0.291993
+(alpha, beta) = (3.778, 6.667), [cer] = 0.291153
+(alpha, beta) = (3.778, 7.778), [cer] = 0.294233
+(alpha, beta) = (3.778, 8.889), [cer] = 0.303751
+(alpha, beta) = (3.778, 10.000), [cer] = 0.314390
+(alpha, beta) = (4.000, 0.000), [cer] = 0.351904
+(alpha, beta) = (4.000, 1.111), [cer] = 0.330347
+(alpha, beta) = (4.000, 2.222), [cer] = 0.316909
+(alpha, beta) = (4.000, 3.333), [cer] = 0.309630
+(alpha, beta) = (4.000, 4.444), [cer] = 0.298152
+(alpha, beta) = (4.000, 5.556), [cer] = 0.290873
+(alpha, beta) = (4.000, 6.667), [cer] = 0.288914
+(alpha, beta) = (4.000, 7.778), [cer] = 0.293953
+(alpha, beta) = (4.000, 8.889), [cer] = 0.301232
+(alpha, beta) = (4.000, 10.000), [cer] = 0.311310
+
+Finish tuning on 1 batches, final opt (alpha, beta) = (2.667, 4.444)

@@ -14,8 +14,8 @@ python -u tools/tune.py \
 --rnn_layer_size=1024 \
 --num_alphas=10 \
 --num_betas=10 \
---alpha_from=0 \
---alpha_to=10 \
+--alpha_from=2 \
+--alpha_to=4 \
 --beta_from=0 \
 --beta_to=10 \
 --cutoff_prob=1.0 \
