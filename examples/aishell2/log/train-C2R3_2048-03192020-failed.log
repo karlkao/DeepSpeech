@@ -1,0 +1,61 @@
+-----------  Configuration Arguments -----------
+augment_conf_path: conf/augmentation.config
+batch_size: 16
+dev_manifest: data/aishell2/manifest.dev
+init_from_pretrained_model: ./models/baidu_cn1.2k
+is_local: 1
+learning_rate: 0.0005
+max_duration: 27.0
+mean_std_path: data/aishell2/mean_std.npz
+min_duration: 0.0
+num_conv_layers: 2
+num_epoch: 10
+num_iter_print: 100
+num_rnn_layers: 3
+num_samples: 999078
+output_model_dir: ./checkpoints/aishell2-baidu_cn1.2k-C2R31024
+rnn_layer_size: 2048
+save_epoch: 1
+share_rnn_weights: 0
+shuffle_method: batch_shuffle_clipped
+specgram_type: linear
+test_off: 0
+train_manifest: data/aishell2/manifest.train
+use_gpu: 1
+use_gru: 1
+use_sortagrad: 1
+vocab_path: models/baidu_cn1.2k/vocab.txt
+------------------------------------------------
+finish initing model from pretrained params from ./models/baidu_cn1.2k
+
+----------Begin test...
+--------Time: 64.945564 sec, epoch: 1, train loss: nan, test loss: nan
+save parameters at ./checkpoints/aishell2-baidu_cn1.2k-C2R31024/epoch_1
+
+----------Begin test...
+--------Time: 17.485220 sec, epoch: 2, train loss: nan, test loss: nan
+save parameters at ./checkpoints/aishell2-baidu_cn1.2k-C2R31024/epoch_2
+
+----------Begin test...
+--------Time: 17.169228 sec, epoch: 3, train loss: nan, test loss: nan
+save parameters at ./checkpoints/aishell2-baidu_cn1.2k-C2R31024/epoch_3
+
+----------Begin test...
+--------Time: 17.095634 sec, epoch: 4, train loss: nan, test loss: nan
+save parameters at ./checkpoints/aishell2-baidu_cn1.2k-C2R31024/epoch_4
+
+----------Begin test...
+--------Time: 17.261719 sec, epoch: 5, train loss: nan, test loss: nan
+save parameters at ./checkpoints/aishell2-baidu_cn1.2k-C2R31024/epoch_5
+
+----------Begin test...
+--------Time: 17.539691 sec, epoch: 6, train loss: nan, test loss: nan
+save parameters at ./checkpoints/aishell2-baidu_cn1.2k-C2R31024/epoch_6
+
+----------Begin test...
+--------Time: 17.474545 sec, epoch: 7, train loss: nan, test loss: nan
+save parameters at ./checkpoints/aishell2-baidu_cn1.2k-C2R31024/epoch_7
+
+----------Begin test...
+--------Time: 16.686280 sec, epoch: 8, train loss: nan, test loss: nan
+save parameters at ./checkpoints/aishell2-baidu_cn1.2k-C2R31024/epoch_8
