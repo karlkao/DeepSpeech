@@ -8,7 +8,7 @@ export FLAGS_sync_nccl_allreduce=0
 CUDA_VISIBLE_DEVICES=0,1,2,4,5,6,7,8,9,10,11,12,13,14,15 \
 python -u train.py \
 --batch_size=16 \
---num_epoch=20 \
+--num_epoch=8 \
 --num_conv_layers=3 \
 --num_rnn_layers=7 \
 --rnn_layer_size=1024 \
@@ -32,7 +32,7 @@ python -u train.py \
 --augment_conf_path='conf/augmentation.config' \
 --specgram_type='linear' \
 --shuffle_method='batch_shuffle_clipped' \
---init_from_pretrained_model="./checkpoints/aishell2-C3R71024/epoch_29" \
+--init_from_pretrained_model="./checkpoints/aishell2-C3R71024/epoch_41" \
 
 if [ $? -ne 0 ]; then
     echo "Failed in training!"
