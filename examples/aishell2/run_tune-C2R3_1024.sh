@@ -12,8 +12,8 @@ python -u tools/tune.py \
 --num_conv_layers=2 \
 --num_rnn_layers=3 \
 --rnn_layer_size=1024 \
---num_alphas=20 \
---num_betas=20 \
+--num_alphas=10 \
+--num_betas=10 \
 --alpha_from=0.0 \
 --alpha_to=10.0 \
 --beta_from=0.0 \
